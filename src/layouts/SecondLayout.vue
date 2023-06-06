@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <div class="second-header animate__animated animate__slideInLeft">
+    <div class="second-header">
       <div class="second-header__content">
         <div class="second-header__title">
           SoftCorp
