@@ -1,14 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <div class="main-header">
-      <div class="main-header__content">
-        <div class="main-header__title">
+    <div class="second-header">
+      <div class="second-header__content">
+        <div class="second-header__title">
           SoftCorp
         </div>
-        <div class="main-header__links only-desktop">
-          <li v-for="link in links" :key="link.key"><a class="anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
+        <div class="second-header__links only-desktop">
+          <li v-for="link in links" :key="link.key"><a class="blue-anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
         </div>
-        <div @click="openMobileMenu" class="main-header__burger only-mobile">
+        <div @click="openMobileMenu" class="second-header__burger only-mobile">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
             <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor" />
           </svg>
@@ -33,10 +33,10 @@
 
     <q-page-container>
       <router-view />
+
       <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20SoftCorp" class="floating" target="_blank">
         <q-icon name="fa-brands fa-whatsapp" />
       </a>
-
     </q-page-container>
   </q-layout>
 </template>
@@ -58,7 +58,7 @@ const links = [
 ]
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: 'SecondLayout',
 
   setup () {
 
@@ -77,21 +77,20 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-.main-header {
+.second-header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  position: fixed;
   z-index: 2;
-  width: 100%;
+  overflow-x: hidden;
 }
 
-.main-header__title {
+.second-header__title {
   font-size: 2rem;
-  color: white;
+  color: $blue;
   cursor: pointer;
 }
 @media only screen and (min-width: $responsiveSize) {
-  .main-header__content {
+  .second-header__content {
     display: flex;
     width: 100%;
     align-items: center;
@@ -100,7 +99,7 @@ export default defineComponent({
 }
 // mobile
 @media only screen and (max-width: $responsiveSize) {
-  .main-header__content {
+  .second-header__content {
     display: flex;
     align-items: center;
     margin-left: 2rem;
@@ -108,10 +107,10 @@ export default defineComponent({
     justify-content: space-between;
   }
 }
-.main-header__links {
+.second-header__links {
   justify-self: center;
   display: flex;
-  color: white;
+  color: $blue;
   margin-left: 2rem;
   list-style: none;
   font-size: 1rem;
@@ -120,13 +119,13 @@ export default defineComponent({
     margin-right: 1rem;
     a {
       text-decoration: none;
-      color: white;
+      color: $blue;
     }
   }
 }
 
-.main-header__burger {
-  color: white;
+.second-header__burger {
+  color: $blue;
   opacity: 1;
   place-items: center;
   & svg {

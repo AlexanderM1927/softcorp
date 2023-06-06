@@ -1,1 +1,143 @@
 // app global css in SCSS form
+
+/*
+  //desktop
+  @media only screen and (min-width: $responsiveSize) {
+
+  }
+
+  //mobile
+  @media only screen and (max-width: $responsiveSize) {
+
+  }
+
+*/
+
+.only-mobile {
+  display: none;
+}
+.only-mobile-fl {
+  display: none;
+}
+.only-desktop {
+  display: block;
+}
+.only-desktop-fl {
+  display: flex;
+}
+.only-desktop-tb-cell {
+  display: table-cell;
+}
+
+@media only screen and (max-width: $responsiveSize) {
+  .only-mobile {
+      display: block;
+  }
+  .only-mobile-fl {
+      display: flex;
+  }
+}
+
+@media (max-width: $responsiveSize) {
+  .only-desktop {
+    display: none !important;
+  }
+  .only-desktop-fl {
+      display: none !important;
+  }
+  .only-desktop-tb-cell {
+      display: none !important;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.anchor__hover-opacity {
+  opacity: 0.7; }
+
+.anchor__hover-opacity:hover {
+  opacity: 1; }
+
+.anchor__hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #FFFFFF; }
+
+.anchor__hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.anchor__hover-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+.blue-anchor__hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #0F3C4D; }
+
+.blue-anchor__hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0F3C4D;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.blue-anchor__hover-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background: #F1F1F1;
+  width: 100%;
+  padding: 1rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add WA floating button CSS */
+.floating {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  text-decoration: none;
+}
