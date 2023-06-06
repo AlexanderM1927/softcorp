@@ -47,7 +47,6 @@ h1, h2 {
     text-decoration: solid;
   }
 }
-
 // mobile
 @media only screen and (max-width: $responsiveSize) {
   .main-container__info {
