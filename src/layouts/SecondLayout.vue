@@ -16,7 +16,7 @@
         <div id="burger-menu" class="header__menu--mobile only-mobile">
           <div class="burger-menu__container">
               <div class="burger-menu__header">
-                  <p class="text-h6">Menu</p>
+                  <h2 class="text-h5">Menu</h2>
                   <div class="burger-menu__close">
                     <svg @click="closeMobileMenu" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12.4978 10.4643L20.7384 2.22366C21.2616 1.70044 21.1308 0.78482 20.6076 0.39241C20.0844 0 19.4304 0 18.9071 0.39241L10.6665 8.63302L2.42593 0.39241C1.90272 -0.130803 1.1179 -0.130803 0.594684 0.39241C0.0714707 0.915623 0.0714707 1.70044 0.594684 2.22366L8.70449 10.4643L0.463881 18.7049C-0.0593327 19.2281 -0.190136 20.0129 0.333077 20.5361C0.856291 21.0593 1.64111 21.1901 2.16432 20.6669L2.29513 20.5361L10.5357 12.2955L18.7763 20.5361C19.2996 21.0593 20.2152 20.9285 20.6076 20.4053C21 19.8821 21 19.2281 20.6076 18.7049L12.4978 10.4643Z" fill="#0F3C4D"/>
@@ -24,7 +24,9 @@
                   </div>
               </div>
               <ul>
-                <li v-for="link in links" :key="link.key"><a :href="link.href">{{ link.title }}</a></li>
+                <li v-for="link in links" :key="link.key">
+                  <a :href="link.href"><q-icon :name="link.icon" />{{ link.title }}</a>
+                </li>
               </ul>
           </div>
       </div>
@@ -47,11 +49,13 @@ import 'animate.css'
 
 const links = [
   {
+    icon: 'home',
     title: 'Home',
     href: '/#/',
     key: 0
   },
   {
+    icon: 'folder',
     title: 'Projects',
     href: '/#/projects',
     key: 1
@@ -141,49 +145,5 @@ export default defineComponent({
     width: 1rem;
     height: 1.188rem;
   }
-}
-
-.burger-menu__container {
-  padding: 0rem 1.938rem;
-}
-
-.header__menu--mobile {
-  position: fixed;
-  background: #FFF;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  color: $blue;
-  z-index: 3;
-  & ul {
-    padding-inline-start: 0px !important;
-    & li {
-      list-style: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.125rem;
-      // line-height: 3.75rem;
-      // text-align: center;
-      & a {
-        color: $blue;
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
-}
-
-.burger-menu__header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  align-items: center;
-  & svg {
-    color: $blue;
-  }
-}
-
-.open {
-  left: 0;
 }
 </style>

@@ -24,7 +24,9 @@
                   </div>
               </div>
               <ul>
-                <li v-for="link in links" :key="link.key"><a :href="link.href">{{ link.title }}</a></li>
+                <li v-for="link in links" :key="link.key">
+                  <a :href="link.href"><q-icon :name="link.icon" />{{ link.title }}</a>
+                </li>
               </ul>
           </div>
       </div>
@@ -47,11 +49,13 @@ import 'animate.css'
 
 const links = [
   {
+    icon: 'home',
     title: 'Home',
     href: '/#/',
     key: 0
   },
   {
+    icon: 'folder',
     title: 'Projects',
     href: '/#/projects',
     key: 1
@@ -134,49 +138,5 @@ export default defineComponent({
     width: 1rem;
     height: 1.188rem;
   }
-}
-
-.burger-menu__container {
-  padding: 0rem 1.938rem;
-}
-
-.header__menu--mobile {
-  position: fixed;
-  background: #FFF;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  color: $blue;
-  z-index: 3;
-  & ul {
-    padding-inline-start: 0px !important;
-    & li {
-      list-style: none;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.125rem;
-      // line-height: 3.75rem;
-      // text-align: center;
-      & a {
-        color: $blue;
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
-}
-
-.burger-menu__header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  align-items: center;
-  & svg {
-    color: $blue;
-  }
-}
-
-.open {
-  left: 0;
 }
 </style>
