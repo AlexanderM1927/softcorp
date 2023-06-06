@@ -36,10 +36,10 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .main-container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
   padding-left: 2rem;
   padding-right: 2rem;

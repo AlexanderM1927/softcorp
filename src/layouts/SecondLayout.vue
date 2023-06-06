@@ -82,6 +82,14 @@ export default defineComponent({
   padding-bottom: 1.5rem;
   z-index: 2;
   overflow-x: hidden;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: white;
 }
 
 .second-header__title {
