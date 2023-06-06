@@ -1,15 +1,27 @@
 <template>
   <q-page class="flex">
     <div
-      class="main-container"
+      class="main-container only-desktop"
       :style="`
         background: url('/images/software-development-button.jpg');
         background-size: cover;
       `"
     >
       <div class="main-container__info">
-        <h1 class="text-h5">Software a la medida</h1>
-        <h2 class="text-h6">Empieza a construir el proyecto de tus sueños</h2>
+        <h1 class="text-h5">Custom Sofware</h1>
+        <h2 class="text-h6">Start building the application for your company or project.</h2>
+      </div>
+    </div>
+    <div
+      class="main-container only-mobile"
+      :style="`
+        background: url('/images/bg-mobile.jpeg');
+        background-size: cover;
+      `"
+    >
+      <div class="main-container__info">
+        <h1 class="text-h5">Custom Sofware</h1>
+        <h2 class="text-h6">Start building the application for your company or project.</h2>
       </div>
     </div>
   </q-page>
