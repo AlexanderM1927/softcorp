@@ -42,7 +42,7 @@ const projects = [
     img: '/images/soundhub.png',
     title: 'SoundHub',
     description: 'Download music, listen your favorites songs, make playlists and chat with people.',
-    url: 'https://myguardmoney.soft-corp.online'
+    url: 'https://soundhub.soft-corp.online'
   },
   {
     img: '/images/exro.png',
