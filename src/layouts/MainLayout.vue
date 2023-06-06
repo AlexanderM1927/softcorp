@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <div class="main-header">
+    <div class="main-header animate__animated animate__slideInLeft">
       <div class="main-header__content">
         <div class="main-header__title">
           SoftCorp
@@ -43,6 +43,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
+import 'animate.css'
 
 const links = [
   {

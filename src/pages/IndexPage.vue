@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex">
     <div
-      class="main-container only-desktop"
+      class="main-container only-desktop animate__animated animate__fadeIn"
       :style="`
         background: url('/images/software-development-button.jpg');
         background-size: cover;
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div
-      class="main-container only-mobile"
+      class="main-container only-mobile animate__animated animate__fadeIn"
       :style="`
         background: url('/images/bg-mobile.jpeg');
         background-size: cover;
@@ -29,6 +29,7 @@
 
 <script>
 import { defineComponent } from 'vue'
+
 
 export default defineComponent({
   name: 'IndexPage'

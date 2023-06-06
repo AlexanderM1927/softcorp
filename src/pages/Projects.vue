@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex">
     <div
-      class="second-container"
+      class="second-container animate__animated animate__fadeIn"
     >
     <h1 class="text-h2">Our projects</h1>
     <br>
