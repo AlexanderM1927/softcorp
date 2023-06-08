@@ -13,7 +13,7 @@
             <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor" />
           </svg>
         </div>
-        <div id="burger-menu" class="header__menu--mobile only-mobile">
+        <div id="burger-menu" :class="`header__menu--mobile only-mobile ${isOpen ? 'open' : ''}`">
           <div class="burger-menu__container">
               <div class="burger-menu__header">
                   <h2 class="text-h5">Menu</h2>
@@ -52,31 +52,34 @@ import { functions } from '../utils/functions.js'
 export default defineComponent({
   name: 'SecondLayout',
   mixins: [functions],
-  props: ['modalOpen'],
-  watch: {
-    modalOpen (newVal, oldVal) {
+  data () {
+    return {
+      isOpen: false
+    }
+  },
+  watch:{
+    '$route' (to, from){
       this.closeMobileMenu()
     }
   },
-  mounted () {
-    this.closeMobileMenu()
-  },
-
   setup () {
 
     return {
       links: links
     }
   },
+  mounted () {
+    this.closeMobileMenu()
+  },
   methods: {
     goToHome () {
       location.href = '/'
     },
     openMobileMenu () {
-      document.getElementById('burger-menu').classList.add('open')
+      this.isOpen = true
     },
     closeMobileMenu () {
-      document.getElementById('burger-menu').classList.remove('open')
+      this.isOpen = false
     }
   }
 })
