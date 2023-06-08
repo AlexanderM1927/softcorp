@@ -65,6 +65,7 @@
   opacity: 1; }
 
 .anchor__hover-underline {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   color: #FFFFFF; }
@@ -86,6 +87,7 @@
   transform-origin: bottom left; }
 
 .blue-anchor__hover-underline {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   color: #0F3C4D; }

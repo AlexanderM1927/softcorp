@@ -15,6 +15,9 @@ export const functions = {
         }
       })
     },
+    goToLocation (url) {
+      location.href = url
+    },
     alert (type, msg) {
       this.$q.notify({
         message: msg,

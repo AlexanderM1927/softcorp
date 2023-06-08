@@ -6,7 +6,7 @@
           SoftCorp
         </div>
         <div class="second-header__links only-desktop">
-          <li v-for="(link, index) in links" :key="index"><a class="blue-anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
+          <li v-for="(link, index) in links" :key="index"><a class="blue-anchor__hover-underline" @click="goToLocation(link.href)">{{ link.title }}</a></li>
         </div>
         <div @click="openMobileMenu" class="second-header__burger only-mobile">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
@@ -25,7 +25,7 @@
               </div>
               <ul>
                 <li v-for="link in links" :key="link.key">
-                  <a :href="link.href"><q-icon :name="link.icon" />{{ link.title }}</a>
+                  <a @click="goToLocation(link.href)"><q-icon :name="link.icon" />{{ link.title }}</a>
                 </li>
               </ul>
           </div>
