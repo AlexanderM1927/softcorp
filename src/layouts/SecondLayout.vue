@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <div class="second-header">
       <div class="second-header__content">
-        <div class="second-header__title">
+        <div class="second-header__title" @click="goToHome()">
           SoftCorp
         </div>
         <div class="second-header__links only-desktop">
@@ -72,6 +72,9 @@ export default defineComponent({
     }
   },
   methods: {
+    goToHome () {
+      location.href = '/#/'
+    },
     openMobileMenu () {
       document.getElementById('burger-menu').classList.add('open')
     },
