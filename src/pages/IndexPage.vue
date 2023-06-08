@@ -46,11 +46,6 @@ export default defineComponent({
   padding-right: 2rem;
 }
 
-h1, h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 //desktop
 @media only screen and (min-width: $responsiveSize) {
   .main-container__info {

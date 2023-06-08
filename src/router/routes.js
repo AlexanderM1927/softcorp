@@ -14,6 +14,13 @@ const routes = [
       { path: '', component: () => import('pages/Projects.vue') }
     ]
   },
+  {
+    path: '/services',
+    component: () => import('layouts/SecondLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Services.vue') }
+    ]
+  },
 
 
   // Always leave this as last one,

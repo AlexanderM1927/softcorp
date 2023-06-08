@@ -6,7 +6,7 @@
           SoftCorp
         </div>
         <div class="main-header__links only-desktop">
-          <li v-for="link in links" :key="link.key"><a class="anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
+          <li v-for="(link, index) in links" :key="index"><a class="anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
         </div>
         <div @click="openMobileMenu" class="main-header__burger only-mobile">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
@@ -46,24 +46,12 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import 'animate.css'
-
-const links = [
-  {
-    icon: 'home',
-    title: 'Home',
-    href: '/#/',
-    key: 0
-  },
-  {
-    icon: 'folder',
-    title: 'Projects',
-    href: '/#/projects',
-    key: 1
-  }
-]
+import { links } from '../utils/links'
+import { functions } from '../utils/functions.js'
 
 export default defineComponent({
   name: 'MainLayout',
+  mixins: [functions],
 
   setup () {
 

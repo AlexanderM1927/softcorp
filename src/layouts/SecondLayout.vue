@@ -6,7 +6,7 @@
           SoftCorp
         </div>
         <div class="second-header__links only-desktop">
-          <li v-for="link in links" :key="link.key"><a class="blue-anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
+          <li v-for="(link, index) in links" :key="index"><a class="blue-anchor__hover-underline" :href="link.href">{{ link.title }}</a></li>
         </div>
         <div @click="openMobileMenu" class="second-header__burger only-mobile">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
@@ -46,24 +46,12 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import 'animate.css'
-
-const links = [
-  {
-    icon: 'home',
-    title: 'Home',
-    href: '/#/',
-    key: 0
-  },
-  {
-    icon: 'folder',
-    title: 'Projects',
-    href: '/#/projects',
-    key: 1
-  }
-]
+import { links } from '../utils/links'
+import { functions } from '../utils/functions.js'
 
 export default defineComponent({
   name: 'SecondLayout',
+  mixins: [functions],
 
   setup () {
 
@@ -73,7 +61,7 @@ export default defineComponent({
   },
   methods: {
     goToHome () {
-      location.href = '/#/'
+      location.href = '/'
     },
     openMobileMenu () {
       document.getElementById('burger-menu').classList.add('open')
@@ -97,12 +85,12 @@ export default defineComponent({
   position: sticky;
   width: 100%;
   top: 0;
-  background: white;
+  background: $blue;
 }
 
 .second-header__title {
   font-size: 2rem;
-  color: $blue;
+  color: white;
   cursor: pointer;
 }
 @media only screen and (min-width: $responsiveSize) {
@@ -126,7 +114,7 @@ export default defineComponent({
 .second-header__links {
   justify-self: center;
   display: flex;
-  color: $blue;
+  color: white;
   margin-left: 2rem;
   list-style: none;
   font-size: 1rem;
@@ -135,13 +123,13 @@ export default defineComponent({
     margin-right: 1rem;
     a {
       text-decoration: none;
-      color: $blue;
+      color: white;
     }
   }
 }
 
 .second-header__burger {
-  color: $blue;
+  color: white;
   opacity: 1;
   place-items: center;
   & svg {
