@@ -3,7 +3,7 @@
     <div
       class="second-container animate__animated animate__fadeIn"
     >
-    <h1 class="text-h2">Our projects</h1>
+    <h1 class="text-h2">Projects</h1>
     <br>
       <div class="row projects">
         <div
