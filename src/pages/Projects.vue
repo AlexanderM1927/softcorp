@@ -80,6 +80,7 @@ export default {
 .project-container {
   background: white;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .project-content {
