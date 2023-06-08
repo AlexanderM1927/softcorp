@@ -12,14 +12,16 @@ const routes = [
     component: () => import('layouts/SecondLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Projects.vue') }
-    ]
+    ],
+    props: { modalOpen: false }
   },
   {
     path: '/services',
     component: () => import('layouts/SecondLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Services.vue') }
-    ]
+    ],
+    props: { modalOpen: false }
   },
 
 
