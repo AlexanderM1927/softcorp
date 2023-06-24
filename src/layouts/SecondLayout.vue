@@ -36,7 +36,7 @@
     <q-page-container>
       <router-view />
 
-      <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20SoftCorp" class="floating" target="_blank">
+      <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20SoftCorp" title="Whatsapp contact" class="floating" target="_blank">
         <q-icon name="fa-brands fa-whatsapp" />
       </a>
     </q-page-container>
