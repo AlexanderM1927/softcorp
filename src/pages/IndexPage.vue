@@ -20,7 +20,7 @@
       `"
     >
       <div class="main-container__info">
-        <h1 class="text-h5">Custom Sofware</h1>
+        <h2 class="text-h5">Custom Sofware</h2>
         <h2 class="text-h6">Start building the application for your company or project.</h2>
       </div>
     </div>
