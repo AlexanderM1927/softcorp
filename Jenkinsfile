@@ -4,7 +4,7 @@ pipeline {
         disableConcurrentBuilds()
     }
     stages {
-        stage('Frontend prepare') {
+        stage('Prepare') {
             tools {
                 nodejs 'node-21.11.1'
             }
@@ -15,7 +15,7 @@ pipeline {
                 }
             }
         }
-        stage('Frontend build') {
+        stage('Build') {
             tools {
                 nodejs 'soundhub-21.11.1'
             }
