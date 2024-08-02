@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Build') {
             tools {
-                nodejs 'soundhub-21.11.1'
+                nodejs 'node-21.11.1'
             }
             steps {
                 dir('./front') {
