@@ -33,28 +33,28 @@
 <script>
 const projects = [
   {
+    img: '/images/soundhub.png',
+    title: 'SoundHub',
+    description: 'Listen your favorites songs, make playlists and chat with people.',
+    url: 'https://soundhub.alexm.club'
+  },
+  {
     img: '/images/myguardmoney.png',
     title: 'MyGuardmoney',
     description: 'Admin your finances, a note your expenses over the month and get graphics about your incomings vs outcomings. It works without internet connection',
-    url: 'https://myguardmoney.soft-corp.online'
+    url: 'https://myguardmoney.alexm.club'
   },
   {
-    img: '/images/soundhub.png',
-    title: 'SoundHub',
-    description: 'Download music, listen your favorites songs, make playlists and chat with people.',
-    url: 'https://soundhub.soft-corp.online'
-  },
-  {
-    img: '/images/exro.png',
-    title: 'EXRO - Aplicación de programas químicos',
-    description: 'App developed for EXRO.',
-    url: 'http://extranet.exro.co:8082'
+    img: '/images/casatudor.png',
+    title: 'CasaTudor - Aplicación de programas químicos',
+    description: 'Ecommerce store with Nuxt and Strapi.',
+    url: 'https://casatudor.alexm.club'
   },
   {
     img: '/images/mypipeline.png',
     title: 'MyPipeline',
     description: 'Manage your business pipeline. Create your tasks and keep notified.',
-    url: 'https://mypipeline.soft-corp.online'
+    url: 'https://mypipeline.alexm.club'
   }
 ]
 export default {
