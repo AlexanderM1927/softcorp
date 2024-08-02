@@ -3,7 +3,7 @@
     <div class="main-header animate__animated animate__slideInLeft">
       <div class="main-header__content">
         <div class="main-header__title">
-          SoftCorp
+          AlexanderM
         </div>
         <div class="main-header__links only-desktop">
           <li v-for="(link, index) in links" :key="index"><a class="anchor__hover-underline" @click="goTo(link.href)">{{ link.title }}</a></li>
@@ -35,7 +35,7 @@
 
     <q-page-container>
       <router-view />
-      <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20SoftCorp" class="floating" target="_blank">
+      <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" class="floating" target="_blank">
         <q-icon name="fa-brands fa-whatsapp" />
       </a>
 

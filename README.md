@@ -1,6 +1,6 @@
-# SoftCorp (softcorp)
+# AlexanderM (AlexanderM)
 
-SoftCorp project
+AlexanderM project
 
 ## Install the dependencies
 ```bash

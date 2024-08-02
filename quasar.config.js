@@ -140,9 +140,9 @@ module.exports = configure(function (ctx) {
 
 
       manifest: {
-        name: `SoftCorp`,
-        short_name: `SoftCorp`,
-        description: `SoftCorp project`,
+        name: `AlexanderM`,
+        short_name: `AlexanderM`,
+        description: `AlexanderM project`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
