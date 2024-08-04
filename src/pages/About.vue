@@ -20,7 +20,7 @@
     <p>
       I also have experience with CI/CD process with Jenkins pipelines and I have been working with Ubuntu and CentOS in order to deploy software products.
     </p>
-    <b>If you're are interested in get any of our products or services, please contact us trought whatsapp icon.</b>
+    <b>If you're are interested in get any of my products or services, please contact me trought whatsapp icon.</b>
     </div>
   </q-page>
 </template>
