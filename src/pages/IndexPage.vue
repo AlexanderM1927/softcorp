@@ -8,7 +8,7 @@
       `"
     >
       <div class="main-container__info">
-        <h1 class="text-h5">AlexanderM - Full Stack Developer</h1>
+        <h1 class="text-h5">Software Engineer</h1>
         <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
       </div>
     </div>
@@ -20,7 +20,7 @@
       `"
     >
       <div class="main-container__info">
-        <h2 class="text-h5">AlexanderM - Full Stack Developer</h2>
+        <h2 class="text-h5">Software Engineer</h2>
         <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
       </div>
     </div>
