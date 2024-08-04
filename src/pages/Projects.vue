@@ -27,13 +27,15 @@
         </div>
       </div>
       <div class="row">
-        <p>
-          I have also work in differents projects for company as software developer.
-        </p>
-        <ul>
-          <li href="https://caretree.me/" target="_blank"><b>CareTree</b> as software developer in Heinsohn</li>
-          <li href="https://eovolt.com/" target="_blank"><b>Eovolt</b> as software developer in Gradiweb</li>
-        </ul>
+        <div class="col-12">
+          <p>
+            I have also work in differents projects for company as software developer.
+          </p>
+          <ul>
+            <li> <a href="https://caretree.me/" target="_blank"><b>CareTree</b></a> as software developer in Heinsohn</li>
+            <li> <a href="https://eovolt.com/" target="_blank"><b>Eovolt</b></a> as software developer in Gradiweb</li>
+          </ul>
+        </div>
       </div>
     </div>
   </q-page>
