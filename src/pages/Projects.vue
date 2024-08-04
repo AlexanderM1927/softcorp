@@ -26,6 +26,15 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <p>
+          I have also work in differents projects for company as software developer.
+        </p>
+        <ul>
+          <li href="https://caretree.me/" target="_blank"><b>CareTree</b> as software developer in Heinsohn</li>
+          <li href="https://eovolt.com/" target="_blank"><b>Eovolt</b> as software developer in Gradiweb</li>
+        </ul>
+      </div>
     </div>
   </q-page>
 </template>
@@ -46,14 +55,14 @@ const projects = [
   },
   {
     img: '/images/casatudor.png',
-    title: 'CasaTudor - Aplicación de programas químicos',
+    title: 'CasaTudor',
     description: 'Ecommerce store with Nuxt and Strapi.',
     url: 'https://casatudor.alexm.club'
   },
   {
     img: '/images/mypipeline.png',
     title: 'MyPipeline',
-    description: 'Manage your business pipeline. Create your tasks and keep notified.',
+    description: 'Manage your business pipeline. Create your tasks and keep notified. Default account mail: admin@gmail.com password: admin',
     url: 'https://mypipeline.alexm.club'
   }
 ]

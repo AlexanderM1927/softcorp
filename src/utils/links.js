@@ -10,8 +10,8 @@ export const links = [
     href: '/projects'
   },
   {
-    icon: 'business',
-    title: 'Services',
-    href: '/services'
+    icon: 'contact',
+    title: 'About me',
+    href: '/about'
   }
 ]

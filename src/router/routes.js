@@ -15,10 +15,10 @@ const routes = [
     ]
   },
   {
-    path: '/services',
+    path: '/about',
     component: () => import('layouts/SecondLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Services.vue') }
+      { path: '', component: () => import('pages/About.vue') }
     ]
   },
 

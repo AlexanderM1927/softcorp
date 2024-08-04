@@ -8,8 +8,8 @@
       `"
     >
       <div class="main-container__info">
-        <h1 class="text-h5">Custom Sofware</h1>
-        <h2 class="text-h6">Start building the application for your company or project.</h2>
+        <h1 class="text-h5">AlexanderM - Full Stack Developer</h1>
+        <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
       </div>
     </div>
     <div
@@ -20,8 +20,8 @@
       `"
     >
       <div class="main-container__info">
-        <h2 class="text-h5">Custom Sofware</h2>
-        <h2 class="text-h6">Start building the application for your company or project.</h2>
+        <h2 class="text-h5">AlexanderM - Full Stack Developer</h2>
+        <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
       </div>
     </div>
   </q-page>
