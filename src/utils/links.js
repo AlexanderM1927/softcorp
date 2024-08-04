@@ -10,7 +10,7 @@ export const links = [
     href: '/projects'
   },
   {
-    icon: 'contact',
+    icon: 'contact_mail',
     title: 'About me',
     href: '/about'
   }
