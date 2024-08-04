@@ -35,6 +35,9 @@
             <li> <a href="https://caretree.me/" target="_blank"><b>CareTree</b></a> as software developer in Heinsohn</li>
             <li> <a href="https://eovolt.com/" target="_blank"><b>Eovolt</b></a> as software developer in Gradiweb</li>
           </ul>
+          <p>
+            Also, as Freelance I have developed 2 differents projects for a local company here in Colombia called EXRO.
+          </p>
         </div>
       </div>
     </div>
