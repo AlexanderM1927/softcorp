@@ -86,7 +86,7 @@ export default {
   },
   methods: {
     goToProject (url) {
-      location.href = url
+      window.open(url, '_blank')
     }
   }
 }
