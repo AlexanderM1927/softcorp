@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <div class="main-header animate__animated animate__slideInLeft">
+    <div id="main-header" class="main-header header-transparent animate__animated animate__slideInLeft">
       <div class="main-header__content">
         <div class="main-header__title">
           AlexanderM
@@ -32,7 +32,12 @@
       </div>
       </div>
     </div>
-
+    <div class="sky">
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
+      <div class="comet"></div>
+    </div>
     <q-page-container>
       <router-view />
       <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" class="floating" target="_blank">
@@ -59,6 +64,14 @@ export default defineComponent({
       links: links
     }
   },
+  mounted () {
+    setTimeout(() => {
+        this.handleScroll()
+        window.addEventListener('scroll', () => {
+          this.handleScroll()
+        })
+    }, 200)
+  },
   methods: {
     openMobileMenu () {
       if (document.getElementById('burger-menu').style.left == '-80%') {
@@ -69,11 +82,34 @@ export default defineComponent({
     },
     closeMobileMenu () {
       document.getElementById('burger-menu').style.left = '-80%'
+    },
+    changeHeaderPerBlack () {
+      document.getElementById('main-header')?.classList.replace('header-transparent', 'header-secondary')
+    },
+    changeHeaderPerDefault () {
+      document.getElementById('main-header')?.classList.replace('header-secondary', 'header-transparent')
+    },
+    handleScroll () {
+      const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop
+      if (bodyScrollTop > 70) {
+        this.changeHeaderPerBlack()
+      } else {
+        this.changeHeaderPerDefault()
+      }
     }
   }
 })
 </script>
 <style lang="scss" scoped>
+
+.header-transparent {
+  background: transparent;
+}
+
+.header-secondary {
+  background: black;
+}
+
 .main-header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;

@@ -1,33 +1,88 @@
 <template>
   <q-page class="flex">
     <div
-      class="main-container only-desktop animate__animated animate__fadeIn"
+      class="w-100 only-desktop animate__animated animate__fadeIn"
       :style="`
         background: url('/images/software-development-button.jpg');
         background-size: cover;
       `"
     >
-      <div class="main-container__info">
-        <h1 class="text-h5 text-gray">Software Engineer</h1>
-        <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
-      </div>
-      <div class="main-container__btn">
-        <button @click="goTo('projects')">Watch briefcase!</button>
+      <div class="main-container">
+        <div class="main-container__info">
+          <h1 class="text-h5 text-gray">Software Engineer</h1>
+          <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
+        </div>
+        <div class="main-container__btn">
+          <button @click="goTo('projects')">Watch briefcase!</button>
+        </div>
       </div>
     </div>
     <div
-      class="main-container only-mobile animate__animated animate__fadeIn"
+      class="w-100 only-mobile animate__animated animate__fadeIn"
       :style="`
         background: url('/images/bg-mobile.PNG');
         background-size: cover;
       `"
     >
-      <div class="main-container__info">
-        <h2 class="text-h5 text-gray">Software Engineer</h2>
-        <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
+      <div class="main-container">
+        <div class="main-container__info">
+          <h2 class="text-h5 text-gray">Software Engineer</h2>
+          <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
+        </div>
+        <div class="main-container__btn">
+          <button @click="goTo('projects')">Watch briefcase!</button>
+        </div>
       </div>
-      <div class="main-container__btn">
-        <button @click="goTo('projects')">Watch briefcase!</button>
+    </div>
+    <div class="third-container w-100 text-white">
+      <div class="third-container__content">
+        <h2 class="text-h4">I have experience working as...</h2>
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <div class="d-flex flex-column justify-center stack-card">
+              <div>
+                <img src="/images/backend.png" class="stack-card__image">
+              </div>
+              <h3 class="text-h5">Backend Developer</h3>
+              <p>
+                <b>Stack:</b> PHP, Laravel and JavaScript (NodeJS)
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="d-flex flex-column justify-center stack-card">
+              <div>
+                <img src="/images/frontend.png" class="stack-card__image">
+              </div>
+              <h3 class="text-h5">Frontend Developer</h3>
+              <p>
+                <b>Stack:</b> HTML, CSS, SCSS, JavaScript, VueJS, JQuery, Quasar, Nuxt
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="d-flex flex-column justify-center stack-card">
+              <div>
+                <img src="/images/ecommerce.png" class="stack-card__image">
+              </div>
+              <h3 class="text-h5">Ecommerce Developer</h3>
+              <p>
+                I have experience working with Shopify.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="d-flex flex-column justify-center stack-card">
+              <div>
+                <img src="/images/server.png" class="stack-card__image">
+              </div>
+              <h3 class="text-h5">Server Managment</h3>
+              <p>
+                I used to work with Ubuntu to set up VPS and config a pipeline through Jenkins to CI/CD process.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </q-page>
@@ -44,73 +99,12 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-.main-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-  z-index: 1;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.stack-card {
+  padding: 2rem;
+  text-align: center;
 }
-
-//desktop
-@media only screen and (min-width: $responsiveSize) {
-  .main-container__info {
-    position: relative;
-    top: 7rem;
-    color: white;
-    text-decoration: solid;
-  }
-}
-// mobile
-@media only screen and (max-width: $responsiveSize) {
-  .main-container__info {
-    position: relative;
-    top: 5rem;
-    color: white;
-    text-decoration: solid;
-    h1, h2 {
-      margin-top: 0;
-    }
-  }
-}
-
-//desktop
-@media only screen and (min-width: $responsiveSize) {
-  .main-container__btn {
-    position: absolute;
-    right: 5rem;
-    bottom: 7rem;
-    color: white;
-    text-decoration: solid;
-    cursor: pointer;
-    button {
-      padding: 0.5rem 2rem;
-      font-size: 1rem;
-      border-radius: 2rem;
-    }
-  }
-}
-// mobile
-@media only screen and (max-width: $responsiveSize) {
-  .main-container__btn {
-    position: absolute;
-    bottom: 7rem;
-    color: white;
-    text-decoration: solid;
-    left: 50%;
-    transform: translate(-50%, 0);
-    cursor: pointer;
-    button {
-      padding: 0.5rem 2rem;
-      font-size: 1rem;
-      border-radius: 2rem;
-    }
-  }
-}
-
-.text-gray {
-  opacity: 0.5;
+.stack-card__image {
+  width: 10rem;
+  height: 10rem;
 }
 </style>
