@@ -3,7 +3,7 @@
     <div
       class="second-container animate__animated animate__fadeIn"
     >
-    <h1 class="text-h2">About me</h1>
+    <h1 class="text-h4">About me</h1>
     <p>
       I'm a software engineer with more than 4 years of experience in the development field. 60% of my lifetime has been dedicated to programming since I was 10 years old, I got interested in how people built websites, so I started creating pages through templates such as blogspot and wix. Then, some years later I started college, where I got my first job as full-stack developer while I was in my fourth semester and then I continued my career studying and working. Last year I finished college, but I’d like to continue studying.
     </p>

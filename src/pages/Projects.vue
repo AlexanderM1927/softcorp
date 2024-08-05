@@ -3,7 +3,7 @@
     <div
       class="second-container animate__animated animate__fadeIn"
     >
-    <h1 class="text-h2">Projects</h1>
+    <h1 class="text-h4">Projects</h1>
     <br>
       <div class="row projects">
         <div
@@ -69,6 +69,12 @@ const projects = [
     title: 'MyPipeline',
     description: 'Manage your business pipeline. Create your tasks and keep notified. Default account mail: admin@gmail.com password: admin',
     url: 'https://mypipeline.alexm.club'
+  },
+  {
+    img: '/images/github.png',
+    title: 'GitHub repositories',
+    description: 'There are also other projects with other technologies on my repo, you can see it!',
+    url: 'https://github.com/AlexanderM1927'
   }
 ]
 export default {

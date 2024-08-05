@@ -108,8 +108,104 @@
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+$starFieldWidth: 2560;
+$starFieldHeight: 2560;
+$starStartOffset: 600px;
+
+$starOneScrollDuration: 100s;
+$starTwoScrollDuration: 125s;
+$starThreeScrollDuration: 175s;
+$numStarOneStars: 1700;
+$numStarTwoStars: 700;
+$numStarThreeStars: 200;
+$numComet: 10;
+
+@function create-stars($n) {
+  $stars: "#{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
+
+  @for $i from 2 through $n {
+    $stars: "#{$stars} , #{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
+  }
+  @return unquote($stars);
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-#{$starFieldHeight}px)
+      translateX(-#{$starFieldWidth}px);
+  }
+}
+
+@keyframes animShootingStar {
+  from {
+    transform: translateY(0px) translateX(0px) rotate(-45deg);
+    opacity: 1;
+    height: 5px;
+  }
+  to {
+    transform: translateY(-#{$starFieldHeight}px)
+      translateX(-#{$starFieldWidth}px) rotate(-45deg);
+    opacity: 1;
+    height: 800px;
+  }
+}
+
+@mixin star-template($numStars, $starSize, $scrollSpeed) {
+  z-index: 10;
+  width: $starSize;
+  height: $starSize;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: create-stars($numStars);
+  animation: animStar $scrollSpeed linear infinite;
+  &:after {
+    content: " ";
+    top: -$starStartOffset;
+    width: $starSize;
+    height: $starSize;
+    border-radius: 50%;
+    position: absolute;
+    background: transparent;
+    box-shadow: create-stars($numStars);
+  }
+}
+
+@mixin shooting-star-template($numStars, $starSize, $speed) {
+  z-index: 10;
+  width: $starSize;
+  height: $starSize + 80px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  animation: animShootingStar $speed linear infinite;
+}
+
+.stars {
+  @include star-template($numStarOneStars, 1px, $starOneScrollDuration);
+}
+.stars2 {
+  @include star-template($numStarTwoStars, 2px, $starTwoScrollDuration);
+}
+.stars3 {
+  @include star-template($numStarThreeStars, 3px, $starThreeScrollDuration);
+}
+.comet {
+  @include shooting-star-template($numComet, 5px, 10s);
+}
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(to bottom, $dark-page 0%, $dark 100%);
 }
 
 .second-container {
@@ -150,12 +246,12 @@ p, b {
 
 .header__menu--mobile {
   position: fixed;
-  background: #FFF;
+  background: $dark-page;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100vh;
-  color: $blue;
+  color: $white;
   z-index: 3;
   & ul {
     padding-inline-start: 0px !important;
@@ -171,7 +267,7 @@ p, b {
         align-items: center;
         text-decoration: none;
         opacity: 0.7;
-        color: $blue;
+        color: $white;
         margin-bottom: 0.5rem;
       }
     }
@@ -185,7 +281,7 @@ p, b {
   margin-top: 2rem;
   align-items: center;
   & svg {
-    color: $blue;
+    color: $white;
   }
 }
 
