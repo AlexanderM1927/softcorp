@@ -97,7 +97,7 @@ export default defineComponent({
   position: sticky;
   width: 100%;
   top: 0;
-  background: $blue;
+  background: $dark-page;
 }
 
 .second-header__title {

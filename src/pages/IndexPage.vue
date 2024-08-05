@@ -8,8 +8,11 @@
       `"
     >
       <div class="main-container__info">
-        <h1 class="text-h5">Software Engineer</h1>
+        <h1 class="text-h5 text-gray">Software Engineer</h1>
         <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
+      </div>
+      <div class="main-container__btn">
+        <button @click="goTo('projects')">Watch briefcase!</button>
       </div>
     </div>
     <div
@@ -20,11 +23,11 @@
       `"
     >
       <div class="main-container__info">
-        <h2 class="text-h5">Software Engineer</h2>
+        <h2 class="text-h5 text-gray">Software Engineer</h2>
         <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
       </div>
       <div class="main-container__btn">
-        <button>Ver portafolio</button>
+        <button @click="goTo('projects')">Watch briefcase!</button>
       </div>
     </div>
   </q-page>
@@ -32,10 +35,12 @@
 
 <script>
 import { defineComponent } from 'vue'
+import { functions } from '../utils/functions.js'
 
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  mixins: [functions]
 })
 </script>
 <style lang="scss">
@@ -69,5 +74,43 @@ export default defineComponent({
       margin-top: 0;
     }
   }
+}
+
+//desktop
+@media only screen and (min-width: $responsiveSize) {
+  .main-container__btn {
+    position: absolute;
+    right: 5rem;
+    bottom: 7rem;
+    color: white;
+    text-decoration: solid;
+    cursor: pointer;
+    button {
+      padding: 0.5rem 2rem;
+      font-size: 1rem;
+      border-radius: 2rem;
+    }
+  }
+}
+// mobile
+@media only screen and (max-width: $responsiveSize) {
+  .main-container__btn {
+    position: absolute;
+    bottom: 7rem;
+    color: white;
+    text-decoration: solid;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    button {
+      padding: 0.5rem 2rem;
+      font-size: 1rem;
+      border-radius: 2rem;
+    }
+  }
+}
+
+.text-gray {
+  opacity: 0.5;
 }
 </style>

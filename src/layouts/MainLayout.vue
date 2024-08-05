@@ -61,10 +61,14 @@ export default defineComponent({
   },
   methods: {
     openMobileMenu () {
-      document.getElementById('burger-menu').classList.add('open')
+      if (document.getElementById('burger-menu').style.left == '-80%') {
+        document.getElementById('burger-menu').style.left = 0
+      } else {
+        document.getElementById('burger-menu').style.left = '-80%'
+      }
     },
     closeMobileMenu () {
-      document.getElementById('burger-menu').classList.remove('open')
+      document.getElementById('burger-menu').style.left = '-80%'
     }
   }
 })
@@ -76,6 +80,12 @@ export default defineComponent({
   position: fixed;
   z-index: 2;
   width: 100%;
+}
+
+#burger-menu {
+  width: 80%;
+  left: -80%;
+  transition: all 0.3s ease;
 }
 
 .main-header__title {
