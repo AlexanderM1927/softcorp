@@ -12,7 +12,9 @@
     </p>
     <p>
       On NodeJS I worked mainly on two projects, one of which was an internal application for the first company I used to work for. There we had a platform to register the working time, here we had a NoSQL database in Mongo DB. company I used to work for. There we had a platform to register the working time. Also, with NodeJS I developed a personal project for educational purposes where we can have a searcher from youtube, and get the music directly. Here I learned about streaming in Node JS. And right now in order to continue learning I'm refactoring that application by applying architecture patterns,  design patterns, TypeScript, and testing with JEST usign TDD approach.
-      For the other hand, as my main language was PHP, I used to work with Laravel, which is a framework, that provides by itself a big architecture where I learned how to write clean code, usign design patterns, microservices and others architecture patterns.
+    </p>
+    <p>
+      For the other hand, as my main language was PHP, I used to work with Laravel, I used to work for 5 projects as professional full stack developer, also I started other several projects more, as Laravel is a framework, that provides by itself a big architecture here is where I learned how to write clean code, using design patterns, microservices and others architecture patterns in order to build high quality software for scalable applications.
     </p>
     <br>
     <b>My Stack: JavaScript, PHP, Laravel, VueJS, NodeJS, Strapi CMS, Shopify.</b>
