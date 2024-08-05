@@ -15,13 +15,16 @@
     <div
       class="main-container only-mobile animate__animated animate__fadeIn"
       :style="`
-        background: url('/images/bg-mobile.png');
+        background: url('/images/bg-mobile.PNG');
         background-size: cover;
       `"
     >
       <div class="main-container__info">
         <h2 class="text-h5">Software Engineer</h2>
         <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
+      </div>
+      <div class="main-container__btn">
+        <button>Ver portafolio</button>
       </div>
     </div>
   </q-page>
