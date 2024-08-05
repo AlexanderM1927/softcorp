@@ -15,7 +15,7 @@
     <div
       class="main-container only-mobile animate__animated animate__fadeIn"
       :style="`
-        background: url('/images/bg-mobile.jpeg');
+        background: url('/images/bg-mobile.png');
         background-size: cover;
       `"
     >
