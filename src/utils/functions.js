@@ -16,7 +16,7 @@ export const functions = {
       })
     },
     goToLocation (url) {
-      location.href = url
+      window.open(url, '_blank')
     },
     alert (type, msg) {
       this.$q.notify({
