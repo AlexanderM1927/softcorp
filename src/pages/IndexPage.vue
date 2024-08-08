@@ -30,7 +30,7 @@
           <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
         </div>
         <div class="main-container__btn">
-          <button @click="goTo('projects')">Watch briefcase!</button>
+          <button @click="goTo('projects')">Show the Portfolio!</button>
         </div>
       </div>
     </div>
