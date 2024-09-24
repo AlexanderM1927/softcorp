@@ -108,6 +108,10 @@
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+.sky {
+  position: fixed;
+}
+
 $starFieldWidth: 2560;
 $starFieldHeight: 2560;
 $starStartOffset: 600px;
