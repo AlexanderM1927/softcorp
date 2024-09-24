@@ -10,7 +10,7 @@ pipeline {
             }
             steps {
                 sh 'npm install'
-                sh 'icongenie generate -m pwa -i ./public/logo.png'
+                sh 'icongenie generate -m pwa -i ./public/android-chrome-192x192.png'
             }
         }
         stage('Build') {
