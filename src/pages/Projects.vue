@@ -71,6 +71,18 @@ const projects = [
     url: 'https://mypipeline.alexm.club'
   },
   {
+    img: '/images/exro-filemanager.png',
+    title: 'EXRO | File Manager',
+    description: 'Application to store corporation documents and automatically add an identifier according to area.',
+    url: 'http://extranet.exro.co:8085'
+  },
+  {
+    img: '/images/exro-controlprograms.png',
+    title: 'EXRO | Control Programas Químicos',
+    description: 'Application to generate reports related to several company water treatment projects and clients.',
+    url: 'http://extranet.exro.co:8082'
+  },
+  {
     img: '/images/github.png',
     title: 'GitHub repositories',
     description: 'There are also other projects with other technologies on my repo, you can see it!',
