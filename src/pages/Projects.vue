@@ -66,7 +66,7 @@ const projects = [
     url: 'https://eovolt.com/'
   },
   {
-    img: '/images/myguardmoney.png',
+    img: '/images/gbmedia.png',
     title: 'GBMedia Platform',
     description: 'Platform for management multiple studios in alliance. Here I used to be a member of the development team. This application runs in Laravel with Tenancy to handle multiple databases with an approach by domains.',
     url: 'https://laravel.gbmediagroup.com/public/login'
