@@ -54,16 +54,16 @@ const projects = [
     url: 'https://soundhub.alexm.club'
   },
   {
-    img: '/images/casatudor.png',
-    title: 'CasaTudor',
-    description: 'Ecommerce store with Nuxt and Strapi.',
-    url: 'https://casatudor.alexm.club'
-  },
-  {
     img: '/images/eovolt.png',
     title: 'Eovolt',
     description: 'Online store built with Shopify when I used to work for Gradiweb.',
     url: 'https://eovolt.com/'
+  },
+  {
+    img: '/images/casatudor.png',
+    title: 'CasaTudor',
+    description: 'Ecommerce store with Nuxt and Strapi.',
+    url: 'https://casatudor.alexm.club'
   },
   {
     img: '/images/gbmedia.png',
