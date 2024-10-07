@@ -42,10 +42,10 @@ const projects = [
     url: 'https://caretree.me/'
   },
   {
-    img: '/images/myguardmoney.png',
-    title: 'MyGuardmoney',
-    description: 'Admin your finances, a note your expenses over the month and get graphics about your incomings vs outcomings. It works without internet connection',
-    url: 'https://myguardmoney.alexm.club'
+    img: '/images/eovolt.png',
+    title: 'Eovolt',
+    description: 'Online store built with Shopify when I used to work for Gradiweb.',
+    url: 'https://eovolt.com/'
   },
   {
     img: '/images/soundhub.png',
@@ -54,16 +54,10 @@ const projects = [
     url: 'https://soundhub.alexm.club'
   },
   {
-    img: '/images/eovolt.png',
-    title: 'Eovolt',
-    description: 'Online store built with Shopify when I used to work for Gradiweb.',
-    url: 'https://eovolt.com/'
-  },
-  {
-    img: '/images/casatudor.png',
-    title: 'CasaTudor',
-    description: 'Ecommerce store with Nuxt and Strapi.',
-    url: 'https://casatudor.alexm.club'
+    img: '/images/myguardmoney.png',
+    title: 'MyGuardmoney',
+    description: 'Admin your finances, a note your expenses over the month and get graphics about your incomings vs outcomings. It works without internet connection',
+    url: 'https://myguardmoney.alexm.club'
   },
   {
     img: '/images/gbmedia.png',
@@ -72,10 +66,10 @@ const projects = [
     url: 'https://laravel.gbmediagroup.com/public/login'
   },
   {
-    img: '/images/mypipeline.png',
-    title: 'MyPipeline',
-    description: 'Manage your business pipeline. Create your tasks and keep notified. Default account mail: admin@gmail.com password: admin',
-    url: 'https://mypipeline.alexm.club'
+    img: '/images/casatudor.png',
+    title: 'CasaTudor',
+    description: 'Ecommerce store with Nuxt and Strapi.',
+    url: 'https://casatudor.alexm.club'
   },
   {
     img: '/images/exro-filemanager.png',
@@ -88,6 +82,12 @@ const projects = [
     title: 'EXRO | Control Programas Químicos',
     description: 'As a freelance, I develop this application to generate reports related to several company water treatment projects and clients.',
     url: 'http://extranet.exro.co:8082'
+  },
+  {
+    img: '/images/mypipeline.png',
+    title: 'MyPipeline',
+    description: 'Manage your business pipeline. Create your tasks and keep notified. Default account mail: admin@gmail.com password: admin',
+    url: 'https://mypipeline.alexm.club'
   },
   {
     img: '/images/github.png',
