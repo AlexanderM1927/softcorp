@@ -1,9 +1,12 @@
 <template>
   <q-page class="flex">
-    <div
+    <section
       class="second-container animate__animated animate__fadeIn"
     >
     <h1 class="text-h4">Projects</h1>
+    <p>
+      Here is a list of projects where I've been participated.
+    </p>
     <br>
       <div class="row projects">
         <div
@@ -26,26 +29,18 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <p>
-            As a software engineer, I have worked for different companies and on various projects.
-          </p>
-          <ul>
-            <li> <a href="https://caretree.me/" target="_blank"><b>CareTree</b></a> as software developer in Heinsohn</li>
-            <li> <a href="https://eovolt.com/" target="_blank"><b>Eovolt</b></a> as software developer in Gradiweb</li>
-          </ul>
-          <p>
-            Also, as Freelance I have developed 2 differents projects for a local company here in Colombia called EXRO.
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   </q-page>
 </template>
 
 <script>
 const projects = [
+  {
+    img: '/images/caretree.png',
+    title: 'CareTree',
+    description: 'Software Application to provide smart care management. Here I used to participate in the development team into the maintenance of the website, building different features, fixing bugs and fixing security risks.',
+    url: 'https://caretree.me/'
+  },
   {
     img: '/images/myguardmoney.png',
     title: 'MyGuardmoney',
@@ -65,6 +60,12 @@ const projects = [
     url: 'https://casatudor.alexm.club'
   },
   {
+    img: '/images/eovolt.png',
+    title: 'Eovolt',
+    description: 'Online store built with Shopify when I used to work for Gradiweb.',
+    url: 'https://eovolt.com/'
+  },
+  {
     img: '/images/mypipeline.png',
     title: 'MyPipeline',
     description: 'Manage your business pipeline. Create your tasks and keep notified. Default account mail: admin@gmail.com password: admin',
@@ -73,13 +74,13 @@ const projects = [
   {
     img: '/images/exro-filemanager.png',
     title: 'EXRO | File Manager',
-    description: 'Application to store corporation documents and automatically add an identifier according to area.',
+    description: 'As a freelance, I develop this application to store corporation documents and automatically add an identifier according to area.',
     url: 'http://extranet.exro.co:8085'
   },
   {
     img: '/images/exro-controlprograms.png',
     title: 'EXRO | Control Programas Químicos',
-    description: 'Application to generate reports related to several company water treatment projects and clients.',
+    description: 'As a freelance, I develop this application to generate reports related to several company water treatment projects and clients.',
     url: 'http://extranet.exro.co:8082'
   },
   {
