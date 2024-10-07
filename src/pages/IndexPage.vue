@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex">
-    <div
+    <section
       class="w-100 only-desktop animate__animated animate__fadeIn"
       :style="`
         background: url('/images/software-development-button.jpg');
@@ -16,8 +16,8 @@
           <button @click="goTo('projects')">Watch briefcase!</button>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="w-100 only-mobile animate__animated animate__fadeIn"
       :style="`
         background: url('/images/bg-mobile.PNG');
@@ -33,8 +33,8 @@
           <button @click="goTo('projects')">Show the Portfolio!</button>
         </div>
       </div>
-    </div>
-    <div class="third-container w-100 text-white">
+    </section>
+    <section class="third-container w-100 text-white">
       <div class="third-container__content">
         <h2 class="text-h4">I have experience working as...</h2>
         <div class="row">
@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </q-page>
 </template>
 
