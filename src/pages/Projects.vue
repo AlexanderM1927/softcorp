@@ -29,7 +29,7 @@
       <div class="row">
         <div class="col-12">
           <p>
-            I have also work in differents projects for company as software developer.
+            As a software engineer, I have worked for different companies and on various projects.
           </p>
           <ul>
             <li> <a href="https://caretree.me/" target="_blank"><b>CareTree</b></a> as software developer in Heinsohn</li>
@@ -47,16 +47,16 @@
 <script>
 const projects = [
   {
-    img: '/images/soundhub.png',
-    title: 'SoundHub',
-    description: 'Listen your favorites songs, make playlists and chat with people.',
-    url: 'https://soundhub.alexm.club'
-  },
-  {
     img: '/images/myguardmoney.png',
     title: 'MyGuardmoney',
     description: 'Admin your finances, a note your expenses over the month and get graphics about your incomings vs outcomings. It works without internet connection',
     url: 'https://myguardmoney.alexm.club'
+  },
+  {
+    img: '/images/soundhub.png',
+    title: 'SoundHub',
+    description: 'Listen your favorites songs, make playlists and chat with people.',
+    url: 'https://soundhub.alexm.club'
   },
   {
     img: '/images/casatudor.png',
