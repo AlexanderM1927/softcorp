@@ -134,7 +134,8 @@ export default defineComponent({
     display: flex;
     width: 100%;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 // mobile
