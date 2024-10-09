@@ -74,13 +74,13 @@ const projects = [
   {
     img: '/images/exro-filemanager.png',
     title: 'EXRO | File Manager',
-    description: 'As a freelance, I develop this application to store corporation documents and automatically add an identifier according to area.',
+    description: 'As a freelancer, I developed this application to store corporation documents and automatically add an identifier according to area.',
     url: 'http://extranet.exro.co:8085'
   },
   {
     img: '/images/exro-controlprograms.png',
     title: 'EXRO | Control Programas Químicos',
-    description: 'As a freelance, I develop this application to generate reports related to several company water treatment projects and clients.',
+    description: 'As a freelancer, I developed this application to generate reports related to several company water treatment projects and clients.',
     url: 'http://extranet.exro.co:8082'
   },
   {
