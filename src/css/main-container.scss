@@ -1,0 +1,66 @@
+//desktop
+@media only screen and (min-width: $responsiveSize) {
+  .main-container__info {
+    position: relative;
+    top: 7rem;
+    color: white;
+    text-decoration: solid;
+  }
+  .main-container {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .main-container__btn {
+    position: absolute;
+    right: 0rem;
+    bottom: 7rem;
+    color: white;
+    text-decoration: solid;
+    cursor: pointer;
+    button {
+      padding: 0.5rem 2rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+    }
+
+  }
+}
+// mobile
+@media only screen and (max-width: $responsiveSize) {
+  .main-container__info {
+    position: relative;
+    top: 5rem;
+    color: white;
+    text-decoration: solid;
+    h1, h2 {
+      margin-top: 0;
+    }
+  }
+  .main-container {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .main-container__btn {
+    position: absolute;
+    bottom: 7rem;
+    color: white;
+    text-decoration: solid;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    button {
+      padding: 0.5rem 2rem;
+      font-size: 1rem;
+      border-radius: 2rem;
+    }
+  }
+}
