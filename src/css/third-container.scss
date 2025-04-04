@@ -1,0 +1,35 @@
+//desktop
+@media only screen and (min-width: $responsiveSize) {
+  .third-container {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    vertical-align: baseline;
+  }
+  .third-container__content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+  }
+}
+// mobile
+@media only screen and (max-width: $responsiveSize) {
+  .third-container {
+    position: relative;
+    height: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.third-container__wrapper {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+}
