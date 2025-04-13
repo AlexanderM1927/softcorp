@@ -5,8 +5,17 @@
     >
     <h1 class="text-h4">Projects</h1>
     <p>
-      Here is a list of projects where I've been participated.
+      These are all the projects where I get involved.
     </p>
+    <q-carousel
+      swipeable
+      animated
+      v-model="mySlide"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide v-for="(project, index) in projects.slice(0, 3)" :name="project.title" :img-src="project.img" />
+    </q-carousel>
     <br>
       <div class="row projects">
         <div
@@ -30,6 +39,7 @@
           </div>
         </div>
       </div>
+      <br>
     </section>
   </q-page>
 </template>
@@ -114,7 +124,12 @@ const projects = [
   }
 ]
 export default {
-  // name: 'PageName',
+  name: 'Projects',
+  data () {
+    return {
+      mySlide: projects[0].title,
+    }
+  },
   setup () {
     return {
       projects: projects

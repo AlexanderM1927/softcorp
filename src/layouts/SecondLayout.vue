@@ -44,6 +44,7 @@
       <a href="https://wa.me/573164510766?text=Hi%20Im%20in%AlexanderM.dev" title="Whatsapp contact" class="floating" target="_blank">
         <q-icon name="fa-brands fa-whatsapp" />
       </a>
+      <Footer />
     </q-page-container>
   </q-layout>
 </template>
@@ -53,10 +54,12 @@ import { defineComponent, ref } from 'vue'
 import 'animate.css'
 import { links } from '../utils/links'
 import { functions } from '../utils/functions.js'
+import Footer from 'src/components/Footer.vue'
 
 export default defineComponent({
   name: 'SecondLayout',
   mixins: [functions],
+  components: { Footer },
   data () {
   },
   watch:{

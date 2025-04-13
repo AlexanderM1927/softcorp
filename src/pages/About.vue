@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  // name: 'PageName',
+  name: 'About',
   setup () {
     return {
     }
