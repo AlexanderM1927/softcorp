@@ -24,7 +24,7 @@
       <div class="main-container">
         <div class="main-container__info">
           <h2 class="text-h5 text-gray">Software Engineer</h2>
-          <h2 class="text-h6">Full Stack developer with more than 4 years of experience working with differents environments and projects.</h2>
+          <h2 class="text-h6">Full Stack developer with more than 5 years of experience working with differents environments and projects.</h2>
         </div>
         <div class="main-container__btn">
           <button @click="goTo('projects')">Show the Portfolio!</button>
