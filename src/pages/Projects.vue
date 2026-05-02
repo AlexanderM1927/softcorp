@@ -3,7 +3,7 @@
     <section class="page-hero animate__animated animate__fadeIn">
       <div class="page-hero__content">
         <span class="page-eyebrow">Portfolio</span>
-        <h1 class="page-title">Projects I've<br><span class="text-green">Built & Shipped</span></h1>
+        <h1 class="page-title">Projects I've<br><span class="text-green">Worked On</span></h1>
         <p class="page-subtitle">A collection of professional and personal projects spanning full-stack development, e-commerce, and DevOps.</p>
       </div>
     </section>
@@ -41,7 +41,7 @@ const projects = [
     img: '/images/hqrentalsoftware.png',
     title: 'HQ Rental Software',
     description: 'Software Application for agencies in the Car Rental business.',
-    position: 'Medior Developer',
+    position: 'Mid Developer',
     url: 'https://hqrentalsoftware.com/'
   },
   {
@@ -59,32 +59,11 @@ const projects = [
     url: 'https://eovolt.com/'
   },
   {
-    img: '/images/soundhub.png',
-    title: 'SoundHub',
-    position: 'Lead Developer',
-    description: 'Listen to your favourite songs, build playlists, and chat with people in real-time.',
-    url: 'https://soundhub.alexm.club'
-  },
-  {
-    img: '/images/myguardmoney.png',
-    title: 'MyGuardmoney',
-    position: 'Lead Developer',
-    description: 'Personal finance tracker with expense graphs, income vs. outgoing insights — works offline.',
-    url: 'https://myguardmoney.alexm.club'
-  },
-  {
-    img: '/images/gbmedia.png',
-    title: 'GBMedia Platform',
-    position: 'Software Engineer',
-    description: 'Multi-studio management platform built with Laravel Tenancy for multi-database domain-driven architecture.',
-    url: 'https://laravel.gbmediagroup.com/public/login'
-  },
-  {
-    img: '/images/casatudor.png',
-    title: 'CasaTudor',
+    img: '/images/mandarastore.png',
+    title: 'Mandara Store',
     position: 'Lead Developer',
     description: 'Full-featured ecommerce store built with Nuxt and Strapi as the headless CMS.',
-    url: 'https://casatudor.alexm.club'
+    url: 'https://mandarastore.com/'
   },
   {
     img: '/images/exro-filemanager.png',
@@ -99,6 +78,27 @@ const projects = [
     position: 'Lead Developer',
     description: 'Reporting application for water treatment projects and client management.',
     url: 'http://extranet.exro.co:8082'
+  },
+  {
+    img: '/images/myguardmoney.png',
+    title: 'MyGuardmoney',
+    position: 'Lead Developer',
+    description: 'Personal finance tracker with expense graphs, income vs. outgoing insights — works offline.',
+    url: 'https://myguardmoney.alexm.club'
+  },
+  {
+    img: '/images/soundhub.png',
+    title: 'SoundHub',
+    position: 'Lead Developer',
+    description: 'Listen to your favourite songs, build playlists, and chat with people in real-time.',
+    url: 'https://soundhub.alexm.club'
+  },
+  {
+    img: '/images/gbmedia.png',
+    title: 'GBMedia Platform',
+    position: 'Software Engineer',
+    description: 'Multi-studio management platform built with Laravel Tenancy for multi-database domain-driven architecture.',
+    url: 'https://laravel.gbmediagroup.com/public/login'
   },
   {
     img: '/images/mypipeline.png',

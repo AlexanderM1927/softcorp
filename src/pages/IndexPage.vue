@@ -56,7 +56,7 @@
             <span class="stat-label">Years Exp.</span>
           </div>
           <div class="hero-stat-card hero-stat-card--2">
-            <span class="stat-number">20+</span>
+            <span class="stat-number">15+</span>
             <span class="stat-label">Projects</span>
           </div>
           <div class="hero-blob hero-blob--1"></div>

@@ -1,29 +1,74 @@
-<template>
-  <q-page class="flex">
-    <div
-      class="second-container animate__animated animate__fadeIn"
-    >
-    <h1 class="text-h4">About me</h1>
-    <p>
-      I'm a software engineer with more than 5 years of experience in the development field. 60% of my lifetime has been dedicated to programming since I was 10 years old, I got interested in how people built websites, so I started creating pages through templates such as blogspot and wix. Then, some years later I started college, where I got my first job as full-stack developer while I was in my fourth semester and then I continued my career studying and working. Last year I finished college, but I’d like to continue studying.
-    </p>
-    <p>
-      On the frontend, I have worked in more than 7 projects with VueJS and also, I used to work for a company dedicated to developing e-commerce stores with Shopify, where performance and detailing it’s a big deal, so I implemented an online store having in mind different ways to perform SEO and it helps to improve my design development with BEM (Block Element Modifier) architecture.
-    </p>
-    <p>
-      On NodeJS I worked mainly on two projects, one of which was an internal application for the first company I used to work for. There we had a platform to register the working time, here we had a NoSQL database in Mongo DB. company I used to work for. There we had a platform to register the working time. Also, with NodeJS I developed a personal project for educational purposes where we can have a searcher from youtube, and get the music directly. Here I learned about streaming in Node JS. And right now in order to continue learning I'm refactoring that application by applying architecture patterns,  design patterns, TypeScript, and testing with JEST usign TDD approach.
-    </p>
-    <p>
-      For the other hand, as my main language was PHP, I used to work with Laravel, I used to work for 5 projects as professional full stack developer, also I started other several projects more, as Laravel is a framework, that provides by itself a big architecture here is where I learned how to write clean code, using design patterns, microservices and others architecture patterns in order to build high quality software for scalable applications.
-    </p>
-    <br>
-    <b>My Stack: JavaScript, PHP, Laravel, VueJS, NodeJS, Strapi CMS, Shopify.</b>
-    <br>
-    <p>
-      I also have experience with CI/CD process with Jenkins pipelines and I have been working with Ubuntu and CentOS in order to deploy software products.
-    </p>
-    <b>If you're are interested in get any of my products or services, please contact me trought whatsapp icon.</b>
-    </div>
+﻿<template>
+  <q-page>
+    <section class="page-hero animate__animated animate__fadeIn">
+      <div class="page-hero__content">
+        <span class="page-eyebrow">About Me</span>
+        <h1 class="page-title">The Engineer<br><span class="text-green">Behind the Code</span></h1>
+        <p class="page-subtitle">Full Stack Developer with 5+ years of experience turning ideas into scalable, production-ready software.</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-bio">
+          <div class="about-block">
+            <h2 class="about-block__title">My Story</h2>
+            <p>I got interested in how people built websites when I was 10 years old, starting with templates like Blogspot and Wix. By college, I had my first professional job as a full-stack developer in my fourth semester — and never stopped since.</p>
+            <p>I finished college while working full time, and I am always pushing to keep learning. Right now I am deepening my knowledge of architecture patterns, TypeScript, and TDD with Jest.</p>
+          </div>
+          <div class="about-block">
+            <h2 class="about-block__title">Frontend</h2>
+            <p>7+ projects with Vue.js and Nuxt. I worked for a Shopify agency where performance and pixel precision were non-negotiable — that shaped my discipline with BEM architecture, SEO, and Core Web Vitals.</p>
+          </div>
+          <div class="about-block">
+            <h2 class="about-block__title">Backend</h2>
+            <p>PHP and Laravel are my primary backend stack, with 5+ professional projects. I have also built Node.js applications, including a YouTube music streamer where I learned real-time streaming deeply.</p>
+          </div>
+          <div class="about-block">
+            <h2 class="about-block__title">DevOps</h2>
+            <p>CI/CD pipelines with Jenkins, VPS management on Ubuntu and CentOS. I handle deployments end-to-end — from server config to automated release pipelines.</p>
+          </div>
+          <div class="about-cta">
+            <p>Interested in working together?</p>
+            <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" target="_blank" class="about-cta__btn">Contact me on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-item__number">5+</span>
+              <span class="stat-item__label">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">15+</span>
+              <span class="stat-item__label">Projects Delivered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">7+</span>
+              <span class="stat-item__label">Vue.js Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">5+</span>
+              <span class="stat-item__label">Laravel Projects</span>
+            </div>
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-card__title">Tech Stack</h3>
+            <div class="skills-grid">
+              <span class="skill-tag" v-for="skill in skills" :key="skill">{{ skill }}</span>
+            </div>
+          </div>
+          <div class="availability-card">
+            <div class="availability-card__dot"></div>
+            <div>
+              <p class="availability-card__status">Available for projects</p>
+              <p class="availability-card__sub">Open to freelance and full-time roles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </q-page>
 </template>
 
@@ -32,10 +77,283 @@ export default {
   name: 'About',
   setup () {
     return {
+      skills: [
+        'JavaScript', 'TypeScript', 'PHP', 'Vue.js', 'Nuxt',
+        'Laravel', 'Node.js', 'Quasar', 'HTML', 'SCSS',
+        'MySQL', 'MongoDB', 'Shopify', 'Strapi', 'Jenkins',
+        'Ubuntu', 'Git', 'Jest', 'Docker'
+      ]
     }
-  methods: {
   }
 }
 </script>
+
 <style lang="scss" scoped>
+.page-hero {
+  background: #ffffff;
+  padding: 9rem 5rem 4rem;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(46, 204, 113, 0.07) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  &__content { max-width: 700px; }
+}
+
+.page-eyebrow {
+  display: inline-block;
+  color: $green;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: $text-primary;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+}
+
+.text-green { color: $green; }
+
+.page-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: $text-secondary;
+  max-width: 560px;
+  margin: 0;
+}
+
+.about-section {
+  background: #f9fafb;
+  padding: 4rem 5rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-block {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      background: $green;
+      border-radius: 2px;
+    }
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: $text-secondary;
+    margin: 0 0 0.75rem;
+
+    &:last-child { margin: 0; }
+  }
+}
+
+.about-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+
+  p {
+    font-size: 0.95rem;
+    color: $text-secondary;
+    margin: 0;
+  }
+
+  &__btn {
+    display: inline-block;
+    background: $green;
+    color: white;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s;
+
+    &:hover {
+      filter: brightness(0.88);
+      box-shadow: 0 6px 20px rgba(46, 204, 113, 0.35);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: sticky;
+  top: 6rem;
+}
+
+.about-stats {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.stat-item {
+  padding: 1.5rem;
+  text-align: center;
+  border-right: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+
+  &:nth-child(even)      { border-right: none; }
+  &:nth-last-child(-n+2) { border-bottom: none; }
+
+  &__number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $green;
+    line-height: 1;
+  }
+
+  &__label {
+    display: block;
+    font-size: 0.78rem;
+    color: $text-secondary;
+    font-weight: 500;
+    margin-top: 0.35rem;
+    line-height: 1.3;
+  }
+}
+
+.skills-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 1rem;
+  }
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: $green-light;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.availability-card {
+  background: $text-primary;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    background: $green;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.25);
+    animation: pulse-dot 2s infinite;
+  }
+
+  &__status {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 0 0.2rem;
+  }
+
+  &__sub {
+    color: #8892a4;
+    font-size: 0.78rem;
+    margin: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.25); }
+  50%       { box-shadow: 0 0 0 8px rgba(46, 204, 113, 0.1); }
+}
+
+@media only screen and (max-width: $responsiveSize) {
+  .page-hero {
+    padding: 8rem 1.5rem 3rem;
+  }
+
+  .about-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-sidebar {
+    position: static;
+  }
+}
 </style>
