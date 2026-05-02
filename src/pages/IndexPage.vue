@@ -1,38 +1,73 @@
 <template>
-  <q-page class="flex">
-    <section
-      class="w-100 only-desktop animate__animated animate__fadeIn"
-    >
-      <div class="main-container">
-        <div class="main-container__info">
-          <h1 class="text-h5 text-gray">Software Engineer</h1>
-          <h2 class="text-h6">
-            Hey there! I'm a software developer. One of my passions is the self-learning process, and I am looking to continuously improve my problem-solving skills. I started developing websites at a young age because of my curiosity, and until now, I have continued working to become a master in developing quality, scalable, and high-performance applications. <br>
-            I have participated in multiple areas of software development, such as coding, deploying, and testing in multiple applications.<br>
-            When it comes to coding, I'm always trying to create the most understandable, quality, and high-performance code possible.<br>
-            I have an ambitious mindset for self-improvement and can assume new challenges with flexibility.<br>
-          </h2>
+  <q-page>
+    <!-- Hero Section -->
+    <section class="hero-section animate__animated animate__fadeIn">
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            Available for new projects
+          </div>
+          <h1 class="hero-title">
+            A Full Stack<br>
+            <span class="hero-accent">Software Engineer</span><br>
+            You Can Trust
+          </h1>
+          <p class="hero-description">
+            5+ years building scalable, high-performance web applications.
+            Combining clean code with strong product thinking to deliver
+            software that truly works.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" @click="goTo('projects')">View Portfolio</button>
+            <button class="btn-outline" @click="goTo('about')">About Me</button>
+          </div>
+          <div class="hero-stack">
+            <span class="stack-badge">Vue.js</span>
+            <span class="stack-badge">Laravel</span>
+            <span class="stack-badge">Node.js</span>
+            <span class="stack-badge">Shopify</span>
+          </div>
         </div>
-        <div class="main-container__btn">
-          <button @click="goTo('projects')">Watch briefcase!</button>
+        <div class="hero-right">
+          <div class="code-card">
+            <div class="code-card__header">
+              <span class="code-dot code-dot--red"></span>
+              <span class="code-dot code-dot--yellow"></span>
+              <span class="code-dot code-dot--green"></span>
+              <span class="code-card__title">developer.js</span>
+            </div>
+            <div class="code-card__body">
+              <p><span class="c-kw">const</span> <span class="c-var">developer</span> = {</p>
+              <p class="code-indent"><span class="c-key">name</span>: <span class="c-str">'AlexanderM'</span>,</p>
+              <p class="code-indent"><span class="c-key">role</span>: <span class="c-str">'Full Stack Dev'</span>,</p>
+              <p class="code-indent"><span class="c-key">experience</span>: <span class="c-num">5</span>,</p>
+              <p class="code-indent"><span class="c-key">skills</span>: [</p>
+              <p class="code-indent2"><span class="c-str">'Vue.js'</span>, <span class="c-str">'Laravel'</span>,</p>
+              <p class="code-indent2"><span class="c-str">'Node.js'</span>, <span class="c-str">'PHP'</span>,</p>
+              <p class="code-indent2"><span class="c-str">'MySQL'</span>, <span class="c-str">'Shopify'</span></p>
+              <p class="code-indent">],</p>
+              <p class="code-indent"><span class="c-key">openToWork</span>: <span class="c-bool">true</span></p>
+              <p>};</p>
+            </div>
+          </div>
+          <div class="hero-stat-card hero-stat-card--1">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="hero-stat-card hero-stat-card--2">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="hero-blob hero-blob--1"></div>
+          <div class="hero-blob hero-blob--2"></div>
         </div>
       </div>
     </section>
-    <section
-      class="w-100 only-mobile animate__animated animate__fadeIn"
-    >
-      <div class="main-container">
-        <div class="main-container__info">
-          <h2 class="text-h5 text-gray">Software Engineer</h2>
-          <h2 class="text-h6">Full Stack developer with more than 5 years of experience working with differents environments and projects.</h2>
-        </div>
-        <div class="main-container__btn">
-          <button @click="goTo('projects')">Show the Portfolio!</button>
-        </div>
-      </div>
-    </section>
-    <section class="third-container w-100 bg-white">
-      <div class="third-container__wrapper">
+
+    <!-- Experience Section -->
+    <section class="experience-section w-100">
+      <div class="experience-wrapper">
         <IndexExperience />
       </div>
     </section>
@@ -44,7 +79,6 @@ import { defineComponent } from 'vue'
 import { functions } from '../utils/functions.js'
 import IndexExperience from 'src/components/IndexExperience.vue';
 
-
 export default defineComponent({
   name: 'IndexPage',
   mixins: [functions],
@@ -54,12 +88,54 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-.stack-card {
-  padding: 2rem;
-  text-align: center;
+.code-card {
+  background: #1a1a2e;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  position: relative;
+  z-index: 2;
+
+  &__header {
+    background: #252542;
+    padding: 0.875rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    color: #8892a4;
+    font-size: 0.8rem;
+    font-family: monospace;
+    margin-left: 0.5rem;
+  }
+
+  &__body {
+    padding: 1.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.8;
+    p { margin: 0; color: #a9b7c6; }
+    .code-indent { padding-left: 1.5rem; }
+    .code-indent2 { padding-left: 3rem; }
+  }
 }
-.stack-card__image {
-  width: 10rem;
-  height: 10rem;
+
+.code-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  &--red    { background: #ff5f57; }
+  &--yellow { background: #febc2e; }
+  &--green  { background: #28c840; }
 }
+
+.c-kw   { color: #cc99cd; }
+.c-var  { color: #6fc1ff; }
+.c-key  { color: #f07178; }
+.c-str  { color: #c3e88d; }
+.c-num  { color: #f78c6c; }
+.c-bool { color: #ff9cac; }
 </style>

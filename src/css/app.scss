@@ -68,7 +68,7 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
-  color: #FFFFFF; }
+  color: #1a1a2e; }
 
 .anchor__hover-underline:after {
   content: '';
@@ -78,7 +78,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #2ECC71;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out; }
 

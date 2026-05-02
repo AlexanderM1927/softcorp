@@ -1,45 +1,36 @@
 <template>
-  <q-page class="flex">
-    <section
-      class="second-container animate__animated animate__fadeIn"
-    >
-    <h1 class="text-h4">Projects</h1>
-    <p>
-      These are all the projects where I get involved.
-    </p>
-    <q-carousel
-      swipeable
-      animated
-      v-model="mySlide"
-      thumbnails
-      infinite
-    >
-      <q-carousel-slide v-for="(project, index) in projects.slice(0, 3)" :name="project.title" :img-src="project.img" />
-    </q-carousel>
-    <br>
-      <div class="row projects">
+  <q-page>
+    <section class="page-hero animate__animated animate__fadeIn">
+      <div class="page-hero__content">
+        <span class="page-eyebrow">Portfolio</span>
+        <h1 class="page-title">Projects I've<br><span class="text-green">Built & Shipped</span></h1>
+        <p class="page-subtitle">A collection of professional and personal projects spanning full-stack development, e-commerce, and DevOps.</p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="projects-grid">
         <div
           v-for="(project, index) in projects"
           :key="index"
-          class="col-md-3 col-xs-12 project-container"
+          class="project-card"
           @click="goToProject(project.url)"
         >
           <div
-            class="project-image"
-            :style="`
-              background: url(${project.img});
-              background-size: cover;
-            `"
-          ></div>
-          <div class="project-content">
-            <h2 class="text-h6">{{ project.title }}</h2>
-            <b>{{ project.position ?? '' }}</b>
-            <hr>
-            <p>{{ project.description }}</p>
+            class="project-card__image"
+            :style="`background-image: url(${project.img})`"
+          >
+            <div class="project-card__overlay">
+              <span class="project-card__view">View Project ↗</span>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span v-if="project.position" class="project-card__badge">{{ project.position }}</span>
+            <h2 class="project-card__title">{{ project.title }}</h2>
+            <p class="project-card__desc">{{ project.description }}</p>
           </div>
         </div>
       </div>
-      <br>
     </section>
   </q-page>
 </template>
@@ -56,80 +47,75 @@ const projects = [
   {
     img: '/images/caretree.png',
     title: 'CareTree',
-    position: 'Junior Advanced Developer Engineer - Heinsohn',
-    description: 'Software Application to provide smart care management. Here I used to participate in the development team into the maintenance of the website, building different features, fixing bugs and fixing security risks.',
+    position: 'Junior Advanced Developer - Heinsohn',
+    description: 'Smart care management platform. Maintained features, fixed bugs, and addressed security risks within the development team.',
     url: 'https://caretree.me/'
   },
   {
     img: '/images/eovolt.png',
     title: 'Eovolt',
     position: 'Frontend Developer - Gradiweb',
-    description: 'Eovolt is a French company that designs and manufactures electric bicycles. I was responsible for the development of the website, including the integration of the Shopify platform and the implementation of various features.',
+    description: 'Shopify store for a French e-bike company. Led development with SEO optimization and custom feature implementation.',
     url: 'https://eovolt.com/'
   },
   {
     img: '/images/soundhub.png',
     title: 'SoundHub',
     position: 'Lead Developer',
-    description: 'Listen your favorites songs, make playlists and chat with people.',
+    description: 'Listen to your favourite songs, build playlists, and chat with people in real-time.',
     url: 'https://soundhub.alexm.club'
   },
   {
     img: '/images/myguardmoney.png',
     title: 'MyGuardmoney',
     position: 'Lead Developer',
-    description: 'Admin your finances, a note your expenses over the month and get graphics about your incomings vs outcomings. It works without internet connection',
+    description: 'Personal finance tracker with expense graphs, income vs. outgoing insights — works offline.',
     url: 'https://myguardmoney.alexm.club'
   },
   {
     img: '/images/gbmedia.png',
     title: 'GBMedia Platform',
     position: 'Software Engineer',
-    description: 'Platform for management multiple studios in alliance. Here I used to be a member of the development team. This application runs in Laravel with Tenancy to handle multiple databases with an approach by domains.',
+    description: 'Multi-studio management platform built with Laravel Tenancy for multi-database domain-driven architecture.',
     url: 'https://laravel.gbmediagroup.com/public/login'
   },
   {
     img: '/images/casatudor.png',
     title: 'CasaTudor',
     position: 'Lead Developer',
-    description: 'Ecommerce store with Nuxt and Strapi.',
+    description: 'Full-featured ecommerce store built with Nuxt and Strapi as the headless CMS.',
     url: 'https://casatudor.alexm.club'
   },
   {
     img: '/images/exro-filemanager.png',
     title: 'EXRO | File Manager',
     position: 'Lead Developer',
-    description: 'As a freelancer, I developed this application to store corporation documents and automatically add an identifier according to area.',
+    description: 'Corporate document storage system with automatic area-based identifier assignment.',
     url: 'http://extranet.exro.co:8085'
   },
   {
     img: '/images/exro-controlprograms.png',
-    title: 'EXRO | Control Programas Químicos',
+    title: 'EXRO | Chemical Programs',
     position: 'Lead Developer',
-    description: 'As a freelancer, I developed this application to generate reports related to several company water treatment projects and clients.',
+    description: 'Reporting application for water treatment projects and client management.',
     url: 'http://extranet.exro.co:8082'
   },
   {
     img: '/images/mypipeline.png',
     title: 'MyPipeline',
     position: 'Lead Developer',
-    description: 'Manage your business pipeline. Create your tasks and keep notified. Default account mail: admin@gmail.com password: admin',
+    description: 'Business pipeline manager with task tracking and real-time notifications.',
     url: 'https://mypipeline.alexm.club'
   },
   {
     img: '/images/github.png',
-    title: 'GitHub repositories',
-    description: 'There are also other projects with other technologies on my repo, you can see it!',
+    title: 'GitHub Repositories',
+    description: 'More projects with various technologies available on my GitHub profile.',
     url: 'https://github.com/AlexanderM1927'
   }
 ]
 export default {
   name: 'Projects',
-  data () {
-    return {
-      mySlide: projects[0].title,
-    }
-  },
   setup () {
     return {
       projects: projects
@@ -143,24 +129,160 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.projects {
-  gap: 2rem;
-  justify-content: center;
+// ── Page hero (shared pattern) ─────────────────────────────────────
+.page-hero {
+  background: #ffffff;
+  padding: 9rem 5rem 4rem;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(46, 204, 113, 0.07) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  &__content {
+    max-width: 700px;
+  }
 }
 
-.project-container {
+.page-eyebrow {
+  display: inline-block;
+  color: $green;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: $text-primary;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+}
+
+.text-green { color: $green; }
+
+.page-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: $text-secondary;
+  max-width: 560px;
+  margin: 0;
+}
+
+// ── Projects grid ──────────────────────────────────────────────────
+.projects-section {
+  background: #f9fafb;
+  padding: 4rem 5rem;
+}
+
+.projects-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.project-card {
   background: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    border-color: $green;
+
+    .project-card__overlay {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(46, 204, 113, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &__view {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__badge {
+    display: inline-block;
+    background: $green-light;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.2rem 0.7rem;
+    border-radius: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 0.5rem;
+  }
+
+  &__desc {
+    font-size: 0.875rem;
+    color: $text-secondary;
+    line-height: 1.6;
+    margin: 0;
+  }
 }
 
-.project-content {
-  padding: 0.5rem;
-}
+// ── Mobile ─────────────────────────────────────────────────────────
+@media only screen and (max-width: $responsiveSize) {
+  .page-hero {
+    padding: 8rem 1.5rem 3rem;
+  }
 
-.project-image {
-  height: 10rem;
-  width: 100%;
-  border-radius: 2rem;
+  .projects-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

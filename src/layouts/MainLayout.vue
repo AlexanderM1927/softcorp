@@ -2,12 +2,11 @@
   <q-layout view="lHh Lpr lFf">
     <div id="main-header" class="main-header header-transparent animate__animated animate__slideInLeft">
       <div class="main-header__content">
-        <div class="main-header__title">
-          AlexanderM
-        </div>
+        <div class="main-header__title" @click="goTo('/')">Alexander<span>M</span></div>
         <div class="main-header__links only-desktop">
-          <li v-for="(link, index) in links" :key="index"><a class="anchor__hover-underline" @click="goTo(link.href)">{{ link.title }}</a></li>
+          <li v-for="(link, index) in links" :key="index"><a class="nav-link" @click="goTo(link.href)">{{ link.title }}</a></li>
         </div>
+        <button class="main-header__cta only-desktop" @click="goTo('about')">Contact Me</button>
         <div @click="openMobileMenu" class="main-header__burger only-mobile">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
             <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor" />
@@ -19,7 +18,7 @@
                   <p class="text-h6">Menu</p>
                   <div class="burger-menu__close">
                     <svg @click="closeMobileMenu" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12.4978 10.4643L20.7384 2.22366C21.2616 1.70044 21.1308 0.78482 20.6076 0.39241C20.0844 0 19.4304 0 18.9071 0.39241L10.6665 8.63302L2.42593 0.39241C1.90272 -0.130803 1.1179 -0.130803 0.594684 0.39241C0.0714707 0.915623 0.0714707 1.70044 0.594684 2.22366L8.70449 10.4643L0.463881 18.7049C-0.0593327 19.2281 -0.190136 20.0129 0.333077 20.5361C0.856291 21.0593 1.64111 21.1901 2.16432 20.6669L2.29513 20.5361L10.5357 12.2955L18.7763 20.5361C19.2996 21.0593 20.2152 20.9285 20.6076 20.4053C21 19.8821 21 19.2281 20.6076 18.7049L12.4978 10.4643Z" fill="#0F3C4D"/>
+                      <path d="M12.4978 10.4643L20.7384 2.22366C21.2616 1.70044 21.1308 0.78482 20.6076 0.39241C20.0844 0 19.4304 0 18.9071 0.39241L10.6665 8.63302L2.42593 0.39241C1.90272 -0.130803 1.1179 -0.130803 0.594684 0.39241C0.0714707 0.915623 0.0714707 1.70044 0.594684 2.22366L8.70449 10.4643L0.463881 18.7049C-0.0593327 19.2281 -0.190136 20.0129 0.333077 20.5361C0.856291 21.0593 1.64111 21.1901 2.16432 20.6669L2.29513 20.5361L10.5357 12.2955L18.7763 20.5361C19.2996 21.0593 20.2152 20.9285 20.6076 20.4053C21 19.8821 21 19.2281 20.6076 18.7049L12.4978 10.4643Z" fill="#1a1a2e"/>
                     </svg>
                   </div>
               </div>
@@ -32,12 +31,7 @@
       </div>
       </div>
     </div>
-    <div class="sky">
-      <div class="stars"></div>
-      <div class="stars2"></div>
-      <div class="stars3"></div>
-      <div class="comet"></div>
-    </div>
+
     <q-page-container>
       <router-view />
       <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" class="floating" target="_blank">
@@ -101,21 +95,24 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-
 .header-transparent {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .header-secondary {
-  background: black;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .main-header {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
+  transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 #burger-menu {
@@ -125,48 +122,75 @@ export default defineComponent({
 }
 
 .main-header__title {
-  font-size: 2rem;
-  color: white;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a1a2e;
   cursor: pointer;
+  span { color: $green; }
 }
+
 @media only screen and (min-width: $responsiveSize) {
   .main-header__content {
     display: flex;
     width: 100%;
     align-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding: 1.25rem 5rem;
+    justify-content: space-between;
   }
 }
-// mobile
+
 @media only screen and (max-width: $responsiveSize) {
   .main-header__content {
     display: flex;
     align-items: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 1.25rem 1.5rem;
     justify-content: space-between;
   }
 }
+
 .main-header__links {
-  justify-self: center;
   display: flex;
-  color: white;
-  margin-left: 2rem;
+  align-items: center;
   list-style: none;
-  font-size: 1rem;
-  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+
   li {
-    margin-right: 1rem;
-    a {
-      text-decoration: none;
-      color: white;
-    }
+    margin-right: 1.5rem;
+  }
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a2e;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover { color: $green; }
+}
+
+.main-header__cta {
+  background: $green;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+
+  &:hover {
+    filter: brightness(0.88);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.35);
   }
 }
 
 .main-header__burger {
-  color: white;
+  color: #1a1a2e;
   opacity: 1;
   place-items: center;
   & svg {

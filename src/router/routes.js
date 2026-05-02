@@ -4,21 +4,9 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
-  },
-  {
-    path: '/projects',
-    component: () => import('layouts/SecondLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Projects.vue') }
-    ]
-  },
-  {
-    path: '/about',
-    component: () => import('layouts/SecondLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/About.vue') }
+      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: 'projects', component: () => import('pages/Projects.vue') },
+      { path: 'about', component: () => import('pages/About.vue') }
     ]
   },
 

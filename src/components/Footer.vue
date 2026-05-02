@@ -1,8 +1,13 @@
 <template>
   <div class="footer">
     <div class="footer__content">
-      <p>AlexanderM © 2025</p>
-      <p>All rights reserved</p>
+      <div class="footer__brand">
+        <p class="footer__logo">Alexander<span>M</span></p>
+        <p class="footer__tagline">Building quality software that matters.</p>
+      </div>
+      <div class="footer__copy">
+        <p>© 2026 AlexanderM. All rights reserved.</p>
+      </div>
     </div>
   </div>
 </template>
