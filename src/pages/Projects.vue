@@ -52,13 +52,6 @@ const projects = [
     url: 'https://caretree.me/'
   },
   {
-    img: '/images/eovolt.png',
-    title: 'Eovolt',
-    position: 'Frontend Developer - Gradiweb',
-    description: 'Shopify store for a French e-bike company. Led development with SEO optimization and custom feature implementation.',
-    url: 'https://eovolt.com/'
-  },
-  {
     img: '/images/mandarastore.png',
     title: 'Mandara Store',
     position: 'Lead Developer',
@@ -87,6 +80,20 @@ const projects = [
     url: 'https://myguardmoney.alexm.club'
   },
   {
+    img: '/images/mypipeline.png',
+    title: 'MyPipeline',
+    position: 'Lead Developer',
+    description: 'Business pipeline manager with task tracking and real-time notifications.',
+    url: 'https://mypipeline.alexm.club'
+  },
+  {
+    img: '/images/eovolt.png',
+    title: 'Eovolt',
+    position: 'Frontend Developer - Gradiweb',
+    description: 'Shopify store for a French e-bike company. Led development with SEO optimization and custom feature implementation.',
+    url: 'https://eovolt.com/'
+  },
+  {
     img: '/images/soundhub.png',
     title: 'SoundHub',
     position: 'Lead Developer',
@@ -99,13 +106,6 @@ const projects = [
     position: 'Software Engineer',
     description: 'Multi-studio management platform built with Laravel Tenancy for multi-database domain-driven architecture.',
     url: 'https://laravel.gbmediagroup.com/public/login'
-  },
-  {
-    img: '/images/mypipeline.png',
-    title: 'MyPipeline',
-    position: 'Lead Developer',
-    description: 'Business pipeline manager with task tracking and real-time notifications.',
-    url: 'https://mypipeline.alexm.club'
   },
   {
     img: '/images/github.png',
