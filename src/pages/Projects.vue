@@ -97,7 +97,7 @@ const projects = [
     img: '/images/soundhub.png',
     title: 'SoundHub',
     position: 'Lead Developer',
-    description: 'Listen to your favourite songs, build playlists, and chat with people in real-time.',
+    description: 'PWA: Listen to your favorite songs, build playlists, and chat with people in real-time.',
     url: 'https://soundhub.alexm.club'
   },
   {
