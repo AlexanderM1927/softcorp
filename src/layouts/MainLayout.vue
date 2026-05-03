@@ -46,6 +46,7 @@
       </div>
     </div>
 
+    <div id="menu-overlay" class="menu-overlay" @click="closeMobileMenu"></div>
     <q-page-container>
       <router-view />
       <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" class="floating" target="_blank">
@@ -90,14 +91,18 @@ export default defineComponent({
   },
   methods: {
     openMobileMenu () {
-      if (document.getElementById('burger-menu').style.left == '-80%') {
-        document.getElementById('burger-menu').style.left = 0
+      if (document.getElementById('burger-menu').style.left == '-100%' || document.getElementById('burger-menu').style.left === '') {
+        document.getElementById('burger-menu').style.left = '0'
+        document.getElementById('menu-overlay').style.opacity = '1'
+        document.getElementById('menu-overlay').style.pointerEvents = 'all'
       } else {
-        document.getElementById('burger-menu').style.left = '-80%'
+        this.closeMobileMenu()
       }
     },
     closeMobileMenu () {
-      document.getElementById('burger-menu').style.left = '-80%'
+      document.getElementById('burger-menu').style.left = '-100%'
+      document.getElementById('menu-overlay').style.opacity = '0'
+      document.getElementById('menu-overlay').style.pointerEvents = 'none'
     },
     changeHeaderPerBlack () {
       document.getElementById('main-header')?.classList.replace('header-transparent', 'header-secondary')
@@ -138,9 +143,20 @@ export default defineComponent({
 }
 
 #burger-menu {
-  width: 80%;
-  left: -80%;
+  width: 82%;
+  max-width: 320px;
+  left: -100%;
   transition: all 0.3s ease;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .main-header__title {
