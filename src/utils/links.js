@@ -1,17 +1,17 @@
 export const links = [
   {
     icon: 'home',
-    title: 'Home',
+    titleKey: 'nav.home',
     href: '/'
   },
   {
     icon: 'folder',
-    title: 'Projects',
+    titleKey: 'nav.projects',
     href: '/projects'
   },
   {
     icon: 'contact_mail',
-    title: 'About me',
+    titleKey: 'nav.aboutMe',
     href: '/about'
   }
 ]

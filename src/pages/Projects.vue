@@ -2,9 +2,9 @@
   <q-page>
     <section class="page-hero animate__animated animate__fadeIn">
       <div class="page-hero__content">
-        <span class="page-eyebrow">Portfolio</span>
-        <h1 class="page-title">Projects I've<br><span class="text-green">Worked On</span></h1>
-        <p class="page-subtitle">A collection of professional and personal projects spanning full-stack development, e-commerce, and DevOps.</p>
+        <span class="page-eyebrow">{{ $t('projects.eyebrow') }}</span>
+        <h1 class="page-title">{{ $t('projects.title') }}<br><span class="text-green">{{ $t('projects.titleAccent') }}</span></h1>
+        <p class="page-subtitle">{{ $t('projects.subtitle') }}</p>
       </div>
     </section>
 

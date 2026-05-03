@@ -6,21 +6,19 @@
         <div class="hero-left">
           <div class="hero-eyebrow">
             <span class="eyebrow-dot"></span>
-            Available for new projects
+            {{ $t('index.available') }}
           </div>
           <h1 class="hero-title">
-            A Full Stack<br>
-            <span class="hero-accent">Software Engineer</span><br>
-            You Can Trust
+            {{ $t('index.heroTitle') }}<br>
+            <span class="hero-accent">{{ $t('index.heroAccent') }}</span><br>
+            {{ $t('index.heroTrust') }}
           </h1>
           <p class="hero-description">
-            5+ years building scalable, high-performance web applications.
-            Combining clean code with strong product thinking to deliver
-            software that truly works.
+            {{ $t('index.heroDesc') }}
           </p>
           <div class="hero-actions">
-            <button class="btn-primary" @click="goTo('projects')">View Portfolio</button>
-            <button class="btn-outline" @click="goTo('about')">About Me</button>
+            <button class="btn-primary" @click="goTo('projects')">{{ $t('index.viewPortfolio') }}</button>
+            <button class="btn-outline" @click="goTo('about')">{{ $t('index.aboutMe') }}</button>
           </div>
           <div class="hero-stack">
             <span class="stack-badge">Vue.js</span>

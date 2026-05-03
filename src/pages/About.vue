@@ -2,9 +2,9 @@
   <q-page>
     <section class="page-hero animate__animated animate__fadeIn">
       <div class="page-hero__content">
-        <span class="page-eyebrow">About Me</span>
-        <h1 class="page-title">The Engineer<br><span class="text-green">Behind the Code</span></h1>
-        <p class="page-subtitle">Full Stack Developer with 5+ years of experience turning ideas into scalable, production-ready software.</p>
+        <span class="page-eyebrow">{{ $t('about.eyebrow') }}</span>
+        <h1 class="page-title">{{ $t('about.title') }}<br><span class="text-green">{{ $t('about.titleAccent') }}</span></h1>
+        <p class="page-subtitle">{{ $t('about.subtitle') }}</p>
       </div>
     </section>
 
@@ -12,25 +12,25 @@
       <div class="about-container">
         <div class="about-bio">
           <div class="about-block">
-            <h2 class="about-block__title">My Story</h2>
-            <p>I got interested in how people built websites when I was 10 years old, starting with templates like Blogspot and Wix. By college, I had my first professional job as a full-stack developer in my fourth semester — and never stopped since.</p>
-            <p>I finished college while working full time, and I am always pushing to keep learning. Right now I am deepening my knowledge of architecture patterns, TypeScript, and TDD with Jest.</p>
+            <h2 class="about-block__title">{{ $t('about.storyTitle') }}</h2>
+            <p>{{ $t('about.storyP1') }}</p>
+            <p>{{ $t('about.storyP2') }}</p>
           </div>
           <div class="about-block">
-            <h2 class="about-block__title">Frontend</h2>
-            <p>7+ projects with Vue.js and Nuxt. I worked for a Shopify agency where performance and pixel precision were non-negotiable — that shaped my discipline with BEM architecture, SEO, and Core Web Vitals.</p>
+            <h2 class="about-block__title">{{ $t('about.frontendTitle') }}</h2>
+            <p>{{ $t('about.frontendDesc') }}</p>
           </div>
           <div class="about-block">
-            <h2 class="about-block__title">Backend</h2>
-            <p>PHP and Laravel are my primary backend stack, with 5+ professional projects. I have also built Node.js applications, including a YouTube music streamer where I learned real-time streaming deeply.</p>
+            <h2 class="about-block__title">{{ $t('about.backendTitle') }}</h2>
+            <p>{{ $t('about.backendDesc') }}</p>
           </div>
           <div class="about-block">
-            <h2 class="about-block__title">DevOps</h2>
-            <p>CI/CD pipelines with Jenkins, VPS management on Ubuntu and CentOS. I handle deployments end-to-end — from server config to automated release pipelines.</p>
+            <h2 class="about-block__title">{{ $t('about.devopsTitle') }}</h2>
+            <p>{{ $t('about.devopsDesc') }}</p>
           </div>
           <div class="about-cta">
-            <p>Interested in working together?</p>
-            <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" target="_blank" class="about-cta__btn">Contact me on WhatsApp</a>
+            <p>{{ $t('about.ctaText') }}</p>
+            <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" target="_blank" class="about-cta__btn">{{ $t('about.ctaBtn') }}</a>
           </div>
         </div>
 
@@ -38,23 +38,23 @@
           <div class="about-stats">
             <div class="stat-item">
               <span class="stat-item__number">5+</span>
-              <span class="stat-item__label">Years of Experience</span>
+              <span class="stat-item__label">{{ $t('about.yearsLabel') }}</span>
             </div>
             <div class="stat-item">
               <span class="stat-item__number">15+</span>
-              <span class="stat-item__label">Projects Delivered</span>
+              <span class="stat-item__label">{{ $t('about.projectsLabel') }}</span>
             </div>
             <div class="stat-item">
               <span class="stat-item__number">7+</span>
-              <span class="stat-item__label">Vue.js Projects</span>
+              <span class="stat-item__label">{{ $t('about.vueLabel') }}</span>
             </div>
             <div class="stat-item">
               <span class="stat-item__number">5+</span>
-              <span class="stat-item__label">Laravel Projects</span>
+              <span class="stat-item__label">{{ $t('about.laravelLabel') }}</span>
             </div>
           </div>
           <div class="skills-card">
-            <h3 class="skills-card__title">Tech Stack</h3>
+            <h3 class="skills-card__title">{{ $t('about.techStack') }}</h3>
             <div class="skills-grid">
               <span class="skill-tag" v-for="skill in skills" :key="skill">{{ skill }}</span>
             </div>
@@ -62,8 +62,8 @@
           <div class="availability-card">
             <div class="availability-card__dot"></div>
             <div>
-              <p class="availability-card__status">Available for projects</p>
-              <p class="availability-card__sub">Open to freelance and full-time roles</p>
+              <p class="availability-card__status">{{ $t('about.availableStatus') }}</p>
+              <p class="availability-card__sub">{{ $t('about.availableSub') }}</p>
             </div>
           </div>
         </div>
