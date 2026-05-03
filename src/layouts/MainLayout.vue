@@ -81,6 +81,11 @@ export default defineComponent({
       setLocale
     }
   },
+  watch: {
+    $route () {
+      this.closeMobileMenu()
+    }
+  },
   mounted () {
     setTimeout(() => {
         this.handleScroll()
