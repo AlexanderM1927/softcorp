@@ -77,14 +77,14 @@ const projects = [
     title: 'MyGuardmoney',
     position: 'Lead Developer',
     description: 'Personal finance tracker with expense graphs, income vs. outgoing insights — works offline.',
-    url: 'https://myguardmoney.alexm.club'
+    url: 'https://myguardmoney.alexanderm.co'
   },
   {
     img: '/images/mypipeline.png',
     title: 'MyPipeline',
     position: 'Lead Developer',
     description: 'Business pipeline manager with task tracking and real-time notifications.',
-    url: 'https://mypipeline.alexm.club'
+    url: 'https://mypipeline.alexanderm.co'
   },
   {
     img: '/images/eovolt.png',
@@ -98,7 +98,7 @@ const projects = [
     title: 'SoundHub',
     position: 'Lead Developer',
     description: 'PWA: Listen to your favorite songs, build playlists, and chat with people in real-time.',
-    url: 'https://soundhub.alexm.club'
+    url: 'https://soundhub.alexanderm.co'
   },
   {
     img: '/images/gbmedia.png',
