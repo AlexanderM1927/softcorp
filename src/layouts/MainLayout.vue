@@ -12,7 +12,6 @@
             <span class="lang-sep">|</span>
             <button :class="['lang-btn', { active: currentLocale === 'es' }]" @click="setLocale('es')">ES</button>
           </div>
-          <button class="main-header__cta" @click="goTo('about')">{{ $t('nav.contactMe') }}</button>
         </div>
         <div class="mobile-right only-mobile">
           <div class="lang-toggle">
