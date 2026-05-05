@@ -49,7 +49,7 @@
     <div id="menu-overlay" class="menu-overlay" @click="closeMobileMenu"></div>
     <q-page-container>
       <router-view />
-      <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" class="floating" target="_blank">
+      <a href="https://wa.me/573164510766?text=Hi%20I%20want%20to%20talk%20with%20you" class="floating" target="_blank">
         <q-icon name="fa-brands fa-whatsapp" />
       </a>
       <Footer />

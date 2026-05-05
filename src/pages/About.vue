@@ -30,7 +30,7 @@
           </div>
           <div class="about-cta">
             <p>{{ $t('about.ctaText') }}</p>
-            <a href="https://wa.me/573164510766?text=Hi%20Im%20in%20AlexanderM.dev" target="_blank" class="about-cta__btn">{{ $t('about.ctaBtn') }}</a>
+            <a href="https://wa.me/573164510766?text=Hi%20I%20want%20to%20talk%20with%20you" target="_blank" class="about-cta__btn">{{ $t('about.ctaBtn') }}</a>
           </div>
         </div>
 
