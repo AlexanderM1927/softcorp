@@ -87,18 +87,18 @@ const projects = [
     url: 'https://mypipeline.alexanderm.co'
   },
   {
-    img: '/images/eovolt.png',
-    title: 'Eovolt',
-    position: 'Frontend Developer - Gradiweb',
-    description: 'Shopify store for a French e-bike company. Led development with SEO optimization and custom feature implementation.',
-    url: 'https://eovolt.com/'
-  },
-  {
     img: '/images/soundhub.png',
     title: 'SoundHub',
     position: 'Lead Developer',
     description: 'PWA: Listen to your favorite songs, build playlists, and chat with people in real-time.',
     url: 'https://soundhub.alexanderm.co'
+  },
+  {
+    img: '/images/eovolt.png',
+    title: 'Eovolt',
+    position: 'Frontend Developer - Gradiweb',
+    description: 'Shopify store for a French e-bike company. Led development with SEO optimization and custom feature implementation.',
+    url: 'https://eovolt.com/'
   },
   {
     img: '/images/gbmedia.png',
