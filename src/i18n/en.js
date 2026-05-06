@@ -11,7 +11,7 @@ export default {
     heroTitle: 'A Full Stack',
     heroAccent: 'Software Engineer',
     heroTrust: 'You Can Trust',
-    heroDesc: '5+ years building scalable, high-performance web applications. Combining clean code with strong product thinking to deliver software that truly works.',
+    heroDesc: '6+ years building scalable, high-performance web applications. Combining clean code with strong product thinking to deliver software that truly works.',
     viewPortfolio: 'View Portfolio',
     aboutMe: 'About Me'
   },
@@ -43,7 +43,7 @@ export default {
     eyebrow: 'About Me',
     title: 'The Engineer',
     titleAccent: 'Behind the Code',
-    subtitle: 'Full Stack Developer with 5+ years of experience turning ideas into scalable, production-ready software.',
+    subtitle: 'Full Stack Developer with 6+ years of experience turning ideas into scalable, production-ready software.',
     storyTitle: 'My Story',
     storyP1: 'I got interested in how people built websites when I was 10 years old, starting with templates like Blogspot and Wix. By college, I had my first professional job as a full-stack developer in my fourth semester — and never stopped since.',
     storyP2: 'I finished college while working full time, and I am always pushing to keep learning. Right now I am deepening my knowledge of architecture patterns, TypeScript, and TDD with Jest.',

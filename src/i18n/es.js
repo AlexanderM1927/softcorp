@@ -11,7 +11,7 @@ export default {
     heroTitle: 'Un Desarrollador',
     heroAccent: 'Full Stack',
     heroTrust: 'En Quien Puedes Confiar',
-    heroDesc: 'Más de 5 años construyendo aplicaciones web escalables y de alto rendimiento. Combinando código limpio con pensamiento de producto para entregar software que realmente funciona.',
+    heroDesc: 'Más de 6 años construyendo aplicaciones web escalables y de alto rendimiento. Combinando código limpio con pensamiento de producto para entregar software que realmente funciona.',
     viewPortfolio: 'Ver Portafolio',
     aboutMe: 'Sobre Mí'
   },
@@ -43,7 +43,7 @@ export default {
     eyebrow: 'Sobre Mí',
     title: 'El Ingeniero',
     titleAccent: 'Detrás del Código',
-    subtitle: 'Desarrollador Full Stack con más de 5 años de experiencia convirtiendo ideas en software escalable y listo para producción.',
+    subtitle: 'Desarrollador Full Stack con más de 6 años de experiencia convirtiendo ideas en software escalable y listo para producción.',
     storyTitle: 'Mi Historia',
     storyP1: 'Me interesé en cómo las personas construían sitios web cuando tenía 10 años, empezando con plantillas como Blogspot y Wix. En la universidad, tuve mi primer trabajo profesional como desarrollador full-stack en mi cuarto semestre — y nunca paré.',
     storyP2: 'Terminé la universidad mientras trabajaba a tiempo completo, y siempre me esfuerzo por seguir aprendiendo. Actualmente estoy profundizando mis conocimientos en patrones de arquitectura, TypeScript y TDD con Jest.',
