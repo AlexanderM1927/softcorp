@@ -73,6 +73,13 @@ const projects = [
     url: 'http://extranet.exro.co:8082'
   },
   {
+    img: '/images/hwc.png',
+    title: 'HWC | Home With Christ',
+    position: 'Lead Developer',
+    description: 'PWA: HWC is a software with a AI Chatbot Integrated for spiritual guidance.',
+    url: 'https://hwc.alexanderm.co/'
+  },
+  {
     img: '/images/myguardmoney.png',
     title: 'MyGuardmoney',
     position: 'Lead Developer',
