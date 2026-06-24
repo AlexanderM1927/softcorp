@@ -59,6 +59,13 @@ const projects = [
     url: 'https://mandarastore.com/'
   },
   {
+    img: '/images/hwc.png',
+    title: 'HWC | Home With Christ',
+    position: 'Lead Developer',
+    description: 'PWA and Android Application: HWC is a software with a AI Chatbot Integrated for spiritual guidance.',
+    url: 'https://homewithchrist.com'
+  },
+  {
     img: '/images/exro-filemanager.png',
     title: 'EXRO | File Manager',
     position: 'Lead Developer',
@@ -71,13 +78,6 @@ const projects = [
     position: 'Lead Developer',
     description: 'Reporting application for water treatment projects and client management.',
     url: 'http://extranet.exro.co:8082'
-  },
-  {
-    img: '/images/hwc.png',
-    title: 'HWC | Home With Christ',
-    position: 'Lead Developer',
-    description: 'PWA: HWC is a software with a AI Chatbot Integrated for spiritual guidance.',
-    url: 'https://hwc.alexanderm.co/'
   },
   {
     img: '/images/myguardmoney.png',
