@@ -37,7 +37,7 @@
         <div class="about-sidebar">
           <div class="about-stats">
             <div class="stat-item">
-              <span class="stat-item__number">6+</span>
+              <span class="stat-item__number">{{ $t('years') }}+</span>
               <span class="stat-item__label">{{ $t('about.yearsLabel') }}</span>
             </div>
             <div class="stat-item">

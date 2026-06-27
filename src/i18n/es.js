@@ -1,4 +1,5 @@
 export default {
+  years: '6',
   nav: {
     home: 'Inicio',
     projects: 'Proyectos',
