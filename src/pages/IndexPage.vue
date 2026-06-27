@@ -39,7 +39,7 @@
               <p><span class="c-kw">const</span> <span class="c-var">developer</span> = {</p>
               <p class="code-indent"><span class="c-key">name</span>: <span class="c-str">'AlexanderM'</span>,</p>
               <p class="code-indent"><span class="c-key">role</span>: <span class="c-str">'Full Stack Dev'</span>,</p>
-              <p class="code-indent"><span class="c-key">experience</span>: <span class="c-num">5</span>,</p>
+              <p class="code-indent"><span class="c-key">experience</span>: <span class="c-num">6</span>,</p>
               <p class="code-indent"><span class="c-key">skills</span>: [</p>
               <p class="code-indent2"><span class="c-str">'Vue.js'</span>, <span class="c-str">'Laravel'</span>,</p>
               <p class="code-indent2"><span class="c-str">'Node.js'</span>, <span class="c-str">'PHP'</span>,</p>
