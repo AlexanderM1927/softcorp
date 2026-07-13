@@ -59,6 +59,12 @@ const projects = [
     url: 'https://mandarastore.com/'
   },
   {
+    img: '/images/myturner.png',
+    title: 'MyTurner',
+    position: 'Lead Developer | CEO',
+    description: 'Multi-tenancy System to manage reservations for businesses such as barbershops, hairdressers, spas and others. '
+  },
+  {
     img: '/images/hwc.png',
     title: 'HWC | Home With Christ',
     position: 'Lead Developer',
