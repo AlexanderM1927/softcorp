@@ -67,7 +67,7 @@ const projects = [
   {
     img: '/images/hwc.png',
     title: 'HWC | Home With Christ',
-    position: 'Lead Developer',
+    position: 'Lead Developer | CEO',
     description: 'PWA and Android Application: HWC is a software with a AI Chatbot Integrated for spiritual guidance.',
     url: 'https://homewithchrist.com'
   },
@@ -87,21 +87,21 @@ const projects = [
   },
   {
     img: '/images/myguardmoney.png',
-    title: 'MyGuardmoney',
+    title: 'MyGuardmoney | CEO',
     position: 'Lead Developer',
     description: 'Personal finance tracker with expense graphs, income vs. outgoing insights — works offline.',
     url: 'https://myguardmoney.alexanderm.co'
   },
   {
     img: '/images/mypipeline.png',
-    title: 'MyPipeline',
+    title: 'MyPipeline | CEO',
     position: 'Lead Developer',
     description: 'Business pipeline manager with task tracking and real-time notifications.',
     url: 'https://mypipeline.alexanderm.co'
   },
   {
     img: '/images/soundhub.png',
-    title: 'SoundHub',
+    title: 'SoundHub | CEO',
     position: 'Lead Developer',
     description: 'PWA: Listen to your favorite songs, build playlists, and chat with people in real-time.',
     url: 'https://soundhub.alexanderm.co'
