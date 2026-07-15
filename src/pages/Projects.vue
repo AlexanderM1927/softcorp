@@ -87,21 +87,21 @@ const projects = [
   },
   {
     img: '/images/myguardmoney.png',
-    title: 'MyGuardmoney | CEO',
-    position: 'Lead Developer',
+    title: 'MyGuardmoney',
+    position: 'Lead Developer | CEO',
     description: 'Personal finance tracker with expense graphs, income vs. outgoing insights — works offline.',
     url: 'https://myguardmoney.alexanderm.co'
   },
   {
     img: '/images/mypipeline.png',
-    title: 'MyPipeline | CEO',
-    position: 'Lead Developer',
+    title: 'MyPipeline',
+    position: 'Lead Developer | CEO',
     description: 'Business pipeline manager with task tracking and real-time notifications.',
     url: 'https://mypipeline.alexanderm.co'
   },
   {
     img: '/images/soundhub.png',
-    title: 'SoundHub | CEO',
+    title: 'SoundHub',
     position: 'Lead Developer',
     description: 'PWA: Listen to your favorite songs, build playlists, and chat with people in real-time.',
     url: 'https://soundhub.alexanderm.co'
