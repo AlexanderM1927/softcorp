@@ -62,7 +62,8 @@ const projects = [
     img: '/images/myturner.png',
     title: 'MyTurner',
     position: 'Lead Developer | CEO',
-    description: 'Multi-tenancy System to manage reservations for businesses such as barbershops, hairdressers, spas and others. '
+    description: 'Multi-tenancy System to manage reservations for businesses such as barbershops, hairdressers, spas and others. ',
+    url: 'https://myturner.co/'
   },
   {
     img: '/images/hwc.png',
